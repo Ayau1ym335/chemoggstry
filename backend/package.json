@@ -1,0 +1,14 @@
+{
+  "name": "chemoggstry-backend",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node src/server.js"
+  },
+  "dependencies": {
+    "ajv": "^8.20.0",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.4",
+    "express": "^4.18.2"
+  }
+}

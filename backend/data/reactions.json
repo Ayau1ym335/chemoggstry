@@ -1,0 +1,179 @@
+[
+  {
+    "id": "r1",
+    "name": "Neutralization: HCl + NaOH",
+    "reactants": [
+      "HCl",
+      "NaOH"
+    ],
+    "products": [
+      "NaCl",
+      "H2O"
+    ],
+    "equation": "HCl + NaOH → NaCl + H2O",
+    "bondingType": "ionic",
+    "reactionPossible": true,
+    "parametersRange": {
+      "temperature": {
+        "min": 20,
+        "max": 80,
+        "step": 10
+      },
+      "concentration": {
+        "min": 0.1,
+        "max": 1,
+        "step": 0.1
+      },
+      "catalystOptions": [
+        "None"
+      ],
+      "time": {
+        "min": 5,
+        "max": 30,
+        "step": 5
+      }
+    }
+  },
+  {
+    "id": "r2",
+    "name": "Precipitation of Silver Chloride",
+    "reactants": [
+      "AgNO3",
+      "NaCl"
+    ],
+    "products": [
+      "AgCl",
+      "NaNO3"
+    ],
+    "equation": "AgNO3 + NaCl → AgCl + NaNO3",
+    "bondingType": "ionic",
+    "reactionPossible": true,
+    "parametersRange": {
+      "temperature": {
+        "min": 10,
+        "max": 50,
+        "step": 5
+      },
+      "concentration": {
+        "min": 0.1,
+        "max": 0.5,
+        "step": 0.1
+      },
+      "catalystOptions": [
+        "None"
+      ],
+      "time": {
+        "min": 10,
+        "max": 60,
+        "step": 10
+      }
+    }
+  },
+  {
+    "id": "r3",
+    "name": "Decomposition of Hydrogen Peroxide",
+    "reactants": [
+      "H2O2"
+    ],
+    "products": [
+      "H2O",
+      "O2"
+    ],
+    "equation": "2H2O2 → 2H2O + O2",
+    "bondingType": "covalent",
+    "reactionPossible": true,
+    "parametersRange": {
+      "temperature": {
+        "min": 20,
+        "max": 60,
+        "step": 5
+      },
+      "concentration": {
+        "min": 3,
+        "max": 30,
+        "step": 3
+      },
+      "catalystOptions": [
+        "None",
+        "MnO2",
+        "KI"
+      ],
+      "time": {
+        "min": 5,
+        "max": 60,
+        "step": 5
+      }
+    }
+  },
+  {
+    "id": "r4",
+    "name": "Synthesis of Ethyl Acetate",
+    "reactants": [
+      "CH3COOH",
+      "C2H5OH"
+    ],
+    "products": [
+      "CH3COOC2H5",
+      "H2O"
+    ],
+    "equation": "CH3COOH + C2H5OH → CH3COOC2H5 + H2O",
+    "bondingType": "covalent",
+    "reactionPossible": true,
+    "parametersRange": {
+      "temperature": {
+        "min": 50,
+        "max": 90,
+        "step": 10
+      },
+      "concentration": {
+        "min": 1,
+        "max": 5,
+        "step": 1
+      },
+      "catalystOptions": [
+        "None",
+        "H2SO4"
+      ],
+      "time": {
+        "min": 30,
+        "max": 150,
+        "step": 30
+      }
+    }
+  },
+  {
+    "id": "r5",
+    "name": "Combustion of Methane",
+    "reactants": [
+      "CH4",
+      "O2"
+    ],
+    "products": [
+      "CO2",
+      "H2O"
+    ],
+    "equation": "CH4 + 2O2 → CO2 + 2H2O",
+    "bondingType": "covalent",
+    "reactionPossible": true,
+    "parametersRange": {
+      "temperature": {
+        "min": 600,
+        "max": 1000,
+        "step": 50
+      },
+      "concentration": {
+        "min": 1,
+        "max": 10,
+        "step": 1
+      },
+      "catalystOptions": [
+        "None"
+      ],
+      "time": {
+        "min": 1,
+        "max": 10,
+        "step": 1
+      }
+    }
+  }
+]

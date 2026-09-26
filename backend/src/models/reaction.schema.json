@@ -1,0 +1,91 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/reaction.schema.json",
+  "title": "Reaction",
+  "description": "Схема для химической реакции",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": ["string", "number"]
+    },
+    "name": {
+      "type": "string"
+    },
+    "reactants": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "products": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "equation": {
+      "type": "string"
+    },
+    "bondingType": {
+      "type": "string",
+      "enum": ["ionic", "covalent", "metallic"]
+    },
+    "reactionPossible": {
+      "type": "boolean"
+    },
+    "parametersRange": {
+      "type": "object",
+      "properties": {
+        "temperature": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "step": { "type": "number" }
+          },
+          "required": ["min", "max", "step"],
+          "additionalProperties": false
+        },
+        "concentration": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "step": { "type": "number" }
+          },
+          "required": ["min", "max", "step"],
+          "additionalProperties": false
+        },
+        "catalystOptions": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "time": {
+          "type": "object",
+          "properties": {
+            "min": { "type": "number" },
+            "max": { "type": "number" },
+            "step": { "type": "number" }
+          },
+          "required": ["min", "max", "step"],
+          "additionalProperties": false
+        }
+      },
+      "required": ["temperature", "concentration", "catalystOptions", "time"],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "id",
+    "name",
+    "reactants",
+    "products",
+    "equation",
+    "bondingType",
+    "reactionPossible",
+    "parametersRange"
+  ],
+  "additionalProperties": false
+}
