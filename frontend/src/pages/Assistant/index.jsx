@@ -1,13 +1,22 @@
 import React from 'react';
 import ChatWindow from '../../components/ChatWindow';
+import { useAppState } from '../../state/appState';
+import { askAssistant } from '../../api/assistantApi';
 
 export default function AssistantPage() {
+  const { activeRunId } = useAppState();
+
   const handleSend = async (question) => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(`I understand you're asking about "${question}". As an AI assistant, I am currently in a mock state. In the upcoming updates, I will connect to the backend logic to provide actual insights based on your optimization run.`);
-      }, 1200);
-    });
+    if (!activeRunId) {
+      return "Please start an optimization run in the Optimizer tab before asking questions.";
+    }
+
+    try {
+      const response = await askAssistant(activeRunId, question);
+      return response.answer;
+    } catch (err) {
+      return `Error: ${err.message}`;
+    }
   };
 
   return (
@@ -16,7 +25,18 @@ export default function AssistantPage() {
       <p className="page-subtitle">
         Ask questions about the optimization decisions or explore what-if scenarios.
       </p>
-      <ChatWindow onSend={handleSend} />
+
+      {!activeRunId ? (
+        <div className="card" style={{ textAlign: 'center', padding: '3rem' }}>
+          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>💬</div>
+          <div className="card-title">No Active Session</div>
+          <p style={{ color: 'var(--text-muted)' }}>
+            Start an optimization run in the Optimizer tab so I can explain the decisions!
+          </p>
+        </div>
+      ) : (
+        <ChatWindow onSend={handleSend} />
+      )}
     </div>
   );
 }
