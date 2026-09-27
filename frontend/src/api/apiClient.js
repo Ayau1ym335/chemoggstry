@@ -9,7 +9,8 @@
  *   POST → apiPost('/runs', { reactionId, goal })
  */
 
-export const BASE = '/api';
+export const BASE = import.meta.env.VITE_API_URL || '/api';
+
 
 /**
  * Core helper. Performs a fetch, parses JSON, and throws a normalized Error
