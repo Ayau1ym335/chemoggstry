@@ -1,13 +1,13 @@
-﻿'use strict';
+'use strict';
 
 const { randomUUID } = require('crypto');
 const runsStore = require('../repositories/runsStore');
+const { MAX_ITERATIONS } = require('./constants');
 
 /** Valid goal values — enforced here so controllers stay thin. */
 const VALID_GOALS = ['maxYield', 'minTime'];
 
-/** Fixed iteration cap for all MVP runs. */
-const MAX_ITERATIONS = 4;
+// MAX_ITERATIONS is imported from ./constants — single source of truth.
 
 /**
  * Create a brand-new optimization run and persist it to the store.

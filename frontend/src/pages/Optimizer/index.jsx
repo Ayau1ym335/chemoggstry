@@ -5,14 +5,15 @@ import GoalSelector from '../../components/GoalSelector';
 import HistoryTable from '../../components/HistoryTable';
 import YieldChart from '../../components/YieldChart';
 import OptimalConditionsCard from '../../components/OptimalConditionsCard';
-import { createRun, getNextConditions, runExperiment, getOptimal } from '../../api/runsApi';
+import ExperimentRunner from '../../components/ExperimentRunner';
+import { createRun, getNextConditions, getOptimal } from '../../api/runsApi';
+import { LoadingState, ErrorState, EmptyState } from '../../components/SharedStates';
 
 // ─── Experiment status machine ──────────────────────────────────────────────
 // 'setup'       → goal not chosen yet
 // 'ready'       → goal chosen, waiting for "Start" click
 // 'fetching'    → fetching /next conditions
-// 'idle'        → conditions shown, waiting for "Run Experiment"
-// 'running'     → POST /experiment in-flight
+// 'idle'        → conditions shown, waiting for user interaction in ExperimentRunner
 // 'completed'   → run finished, optimal card visible
 // ────────────────────────────────────────────────────────────────────────────
 
@@ -23,6 +24,7 @@ export default function OptimizerPage() {
   const [goal, setGoal]                         = useState(null);
   const [phase, setPhase]                       = useState('setup');
   const [runId, setRunId]                       = useState(null);
+  const [maxIterations, setMaxIterations]       = useState(4);  // overwritten from server on start
   const [suggestedConditions, setSuggested]     = useState(null);
   const [history, setHistory]                   = useState([]);
   const [optimal, setOptimal]                   = useState(null);
@@ -39,6 +41,7 @@ export default function OptimizerPage() {
     try {
       const run = await createRun({ reactionId: selectedReaction.id, goal });
       setRunId(run.id);
+      setMaxIterations(run.maxIterations ?? 4); // use server value; fall back to 4 for safety
       setActiveRunId(run.id); // Save to global state for AI Assistant
       const suggested = await getNextConditions(run.id);
       setSuggested(suggested);
@@ -49,68 +52,63 @@ export default function OptimizerPage() {
     }
   }, [selectedReaction, goal, setActiveRunId]);
 
-  // ── Run one experiment iteration ──────────────────────────────────────────
-  const handleRunExperiment = useCallback(async () => {
-    if (!runId || !suggestedConditions || phase !== 'idle') return;
-    setPhase('running');
+  // ── Handle completed iteration from ExperimentRunner ──────────────────────
+  const handleIterationComplete = useCallback(async (iteration, runStatus) => {
     setIterationError(null);
+    setHistory((prev) => [...prev, iteration]);
 
-    try {
-      const { iteration, runStatus } = await runExperiment(runId, suggestedConditions);
-
-      // Accumulate history client-side from iteration returned by server (option b: server is source of truth)
-      setHistory((prev) => [...prev, iteration]);
-
-      if (runStatus === 'completed') {
-        // Fetch optimal and show final card
+    if (runStatus === 'completed') {
+      try {
         const optimalData = await getOptimal(runId);
         setOptimal(optimalData.optimal);
         setPhase('completed');
-      } else {
-        // Fetch next suggested conditions for the following iteration
+      } catch (err) {
+        setIterationError(err.message);
+      }
+    } else {
+      setPhase('fetching');
+      try {
         const suggested = await getNextConditions(runId);
         setSuggested(suggested);
         setPhase('idle');
+      } catch (err) {
+        setIterationError(err.message);
+        setPhase('idle');
       }
-    } catch (err) {
-      setIterationError(err.message);
-      setPhase('idle'); // Let user retry rather than getting stuck
     }
-  }, [runId, suggestedConditions, phase]);
+  }, [runId]);
 
-  // ── Reset everything (start over with a new run) ──────────────────────────
   const handleReset = () => {
     setGoal(null);
     setPhase('setup');
     setRunId(null);
-    setActiveRunId(null); // Clear from global state
+    setMaxIterations(4);
+    setActiveRunId(null);
     setSuggested(null);
     setHistory([]);
     setOptimal(null);
     setIterationError(null);
   };
 
-  // ─────────────────────────────────────────────────────────────────────────
   if (!selectedReaction) {
     return (
       <div className="page-content">
         <h1 className="page-title">Optimizer</h1>
-        <div className="card" style={{ textAlign: 'center', padding: '3rem' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>⚙️</div>
-          <div className="card-title">No Reaction Selected</div>
-          <p style={{ color: 'var(--text-muted)', marginBottom: '1.5rem' }}>
-            Please select a reaction from the database first.
-          </p>
-          <button className="primary-action-btn" onClick={() => navigate('/reactions')}>
-            Go to Database →
-          </button>
-        </div>
+        <EmptyState 
+          icon="⚙️"
+          title="No Reaction Selected"
+          message="Please select a reaction from the database first."
+          action={
+            <button className="primary-action-btn" onClick={() => navigate('/reactions')}>
+              Go to Database →
+            </button>
+          }
+        />
       </div>
     );
   }
 
   const iterationCount = history.length;
-  const maxIterations  = 4;
   const progressPct    = (iterationCount / maxIterations) * 100;
 
   return (
@@ -127,20 +125,12 @@ export default function OptimizerPage() {
           </div>
           <span className="detail-value equation-box">{selectedReaction.equation}</span>
           {phase === 'setup' && (
-            <button
-              className="secondary-action-btn"
-              style={{ marginLeft: 'auto', fontSize: '0.8rem', padding: '0.35rem 0.85rem' }}
-              onClick={() => navigate('/reactions')}
-            >
+            <button className="secondary-action-btn" style={{ marginLeft: 'auto', fontSize: '0.8rem', padding: '0.35rem 0.85rem' }} onClick={() => navigate('/reactions')}>
               Change
             </button>
           )}
           {phase !== 'setup' && (
-            <button
-              className="secondary-action-btn"
-              style={{ marginLeft: 'auto', fontSize: '0.8rem', padding: '0.35rem 0.85rem' }}
-              onClick={handleReset}
-            >
+            <button className="secondary-action-btn" style={{ marginLeft: 'auto', fontSize: '0.8rem', padding: '0.35rem 0.85rem' }} onClick={handleReset}>
               ↺ New Run
             </button>
           )}
@@ -177,60 +167,25 @@ export default function OptimizerPage() {
         </div>
       )}
 
-      {/* ── Experiment runner (fetching / idle / running) ───────────────── */}
-      {(phase === 'fetching' || phase === 'idle' || phase === 'running') && (
-        <div className="card" style={{ marginTop: '1rem' }}>
-          <div style={{ fontSize: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.06em', color: 'var(--text-muted)', marginBottom: '1rem', borderBottom: '1px solid var(--border)', paddingBottom: '0.75rem' }}>
-            Experiment #{iterationCount + 1} — Suggested Conditions
-          </div>
-
-          {phase === 'fetching' ? (
-            <div className="loading-state" style={{ justifyContent: 'center', padding: '1rem 0' }}>
-              <div className="spinner"></div>
-              <span>Calculating next conditions…</span>
-            </div>
-          ) : (
-            <>
-              <div className="conditions-grid">
-                {[
-                  { label: 'Temperature', value: `${suggestedConditions?.temperature} °C` },
-                  { label: 'Concentration', value: `${suggestedConditions?.concentration} M` },
-                  { label: 'Catalyst', value: suggestedConditions?.catalyst },
-                  { label: 'Reaction Time', value: `${suggestedConditions?.time} min` },
-                ].map(({ label, value }) => (
-                  <div key={label} className="condition-item">
-                    <span className="condition-label">{label}</span>
-                    <span className="condition-value">{value}</span>
-                  </div>
-                ))}
-              </div>
-
-              <div className="runner-actions" style={{ marginTop: '0.5rem' }}>
-                {phase === 'running' ? (
-                  <div className="loading-state" style={{ justifyContent: 'center', width: '100%' }}>
-                    <div className="spinner"></div>
-                    <span>Running simulation…</span>
-                  </div>
-                ) : (
-                  <button
-                    className="primary-action-btn run-btn"
-                    onClick={handleRunExperiment}
-                    disabled={phase !== 'idle'}
-                  >
-                    RUN EXPERIMENT
-                  </button>
-                )}
-              </div>
-            </>
-          )}
-        </div>
-      )}
-
       {/* ── Error banner ────────────────────────────────────────────────── */}
       {iterationError && (
-        <div className="card slide-up" style={{ marginTop: '1rem', borderLeft: '4px solid #b91c1c', background: '#fff5f5' }}>
-          <span style={{ color: '#b91c1c', fontWeight: 600 }}>⚠️ {iterationError}</span>
-        </div>
+        <ErrorState title="Experiment Error" message={iterationError} inline />
+      )}
+
+      {/* ── Experiment runner (fetching / idle) ───────────────── */}
+      {(phase === 'fetching' || phase === 'idle') && (
+        phase === 'fetching' ? (
+          <div className="card" style={{ marginTop: '1rem' }}>
+            <LoadingState message="Calculating next conditions…" inline />
+          </div>
+        ) : (
+          <ExperimentRunner
+            runId={runId}
+            suggestedConditions={suggestedConditions}
+            iterationCount={iterationCount}
+            onIterationComplete={handleIterationComplete}
+          />
+        )
       )}
 
       {/* ── History table + chart ────────────────────────────────────────── */}

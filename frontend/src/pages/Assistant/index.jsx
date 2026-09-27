@@ -2,6 +2,7 @@ import React from 'react';
 import ChatWindow from '../../components/ChatWindow';
 import { useAppState } from '../../state/appState';
 import { askAssistant } from '../../api/assistantApi';
+import { EmptyState } from '../../components/SharedStates';
 
 export default function AssistantPage() {
   const { activeRunId } = useAppState();
@@ -27,13 +28,11 @@ export default function AssistantPage() {
       </p>
 
       {!activeRunId ? (
-        <div className="card" style={{ textAlign: 'center', padding: '3rem' }}>
-          <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>💬</div>
-          <div className="card-title">No Active Session</div>
-          <p style={{ color: 'var(--text-muted)' }}>
-            Start an optimization run in the Optimizer tab so I can explain the decisions!
-          </p>
-        </div>
+        <EmptyState 
+          icon="💬"
+          title="No Active Session"
+          message="Start an optimization run in the Optimizer tab so I can explain the decisions!"
+        />
       ) : (
         <ChatWindow onSend={handleSend} />
       )}

@@ -1,0 +1,23 @@
+[
+  { "symbol": "H", "name": "Hydrogen", "atomicNumber": 1, "group": 1, "period": 1, "category": "non-metal", "shortDescription": "The lightest and most abundant element in the universe." },
+  { "symbol": "Li", "name": "Lithium", "atomicNumber": 3, "group": 1, "period": 2, "category": "metal", "shortDescription": "A soft, silvery-white alkali metal, highly reactive." },
+  { "symbol": "C", "name": "Carbon", "atomicNumber": 6, "group": 14, "period": 2, "category": "non-metal", "shortDescription": "The basis of all known life on Earth." },
+  { "symbol": "N", "name": "Nitrogen", "atomicNumber": 7, "group": 15, "period": 2, "category": "non-metal", "shortDescription": "A colorless gas that makes up most of Earth's atmosphere." },
+  { "symbol": "O", "name": "Oxygen", "atomicNumber": 8, "group": 16, "period": 2, "category": "non-metal", "shortDescription": "Essential for respiration and combustion." },
+  { "symbol": "F", "name": "Fluorine", "atomicNumber": 9, "group": 17, "period": 2, "category": "non-metal", "shortDescription": "The most electronegative and reactive of all elements." },
+  { "symbol": "Na", "name": "Sodium", "atomicNumber": 11, "group": 1, "period": 3, "category": "metal", "shortDescription": "A soft, silvery-white, highly reactive metal." },
+  { "symbol": "Mg", "name": "Magnesium", "atomicNumber": 12, "group": 2, "period": 3, "category": "metal", "shortDescription": "A shiny gray solid used in lightweight alloys." },
+  { "symbol": "Si", "name": "Silicon", "atomicNumber": 14, "group": 14, "period": 3, "category": "metalloid", "shortDescription": "A hard, brittle crystalline solid widely used in electronics." },
+  { "symbol": "P", "name": "Phosphorus", "atomicNumber": 15, "group": 15, "period": 3, "category": "non-metal", "shortDescription": "A highly reactive nonmetal essential for life." },
+  { "symbol": "S", "name": "Sulfur", "atomicNumber": 16, "group": 16, "period": 3, "category": "non-metal", "shortDescription": "A bright yellow, brittle solid." },
+  { "symbol": "Cl", "name": "Chlorine", "atomicNumber": 17, "group": 17, "period": 3, "category": "non-metal", "shortDescription": "A yellow-green gas commonly used as a disinfectant." },
+  { "symbol": "K", "name": "Potassium", "atomicNumber": 19, "group": 1, "period": 4, "category": "metal", "shortDescription": "A soft silvery-white metal that reacts violently with water." },
+  { "symbol": "Ca", "name": "Calcium", "atomicNumber": 20, "group": 2, "period": 4, "category": "metal", "shortDescription": "An alkaline earth metal essential for living organisms." },
+  { "symbol": "Mn", "name": "Manganese", "atomicNumber": 25, "group": 7, "period": 4, "category": "metal", "shortDescription": "A hard, brittle silvery metal often used in steel alloys." },
+  { "symbol": "Fe", "name": "Iron", "atomicNumber": 26, "group": 8, "period": 4, "category": "metal", "shortDescription": "The most common element on Earth by mass." },
+  { "symbol": "Cu", "name": "Copper", "atomicNumber": 29, "group": 11, "period": 4, "category": "metal", "shortDescription": "A soft, malleable metal with very high thermal and electrical conductivity." },
+  { "symbol": "Se", "name": "Selenium", "atomicNumber": 34, "group": 16, "period": 4, "category": "non-metal", "shortDescription": "A nonmetal with properties intermediate between sulfur and tellurium." },
+  { "symbol": "Br", "name": "Bromine", "atomicNumber": 35, "group": 17, "period": 4, "category": "non-metal", "shortDescription": "A deep red fuming liquid at room temperature." },
+  { "symbol": "Ag", "name": "Silver", "atomicNumber": 47, "group": 11, "period": 5, "category": "metal", "shortDescription": "A soft, white, lustrous transition metal." },
+  { "symbol": "I", "name": "Iodine", "atomicNumber": 53, "group": 17, "period": 5, "category": "non-metal", "shortDescription": "A lustrous, purple-black nonmetallic solid." }
+]

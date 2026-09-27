@@ -581,7 +581,7 @@
     "concentration": 0.1,
     "catalyst": "None",
     "time": 5,
-    "yield": 59.4
+    "yield": 66.5
   },
   {
     "reactionId": "r1",
@@ -589,7 +589,7 @@
     "concentration": 0.1,
     "catalyst": "None",
     "time": 10,
-    "yield": 64.3
+    "yield": 68.2
   },
   {
     "reactionId": "r1",
@@ -629,7 +629,7 @@
     "concentration": 0.3,
     "catalyst": "None",
     "time": 20,
-    "yield": 78.8
+    "yield": 83.5
   },
   {
     "reactionId": "r1",
@@ -1845,7 +1845,7 @@
     "concentration": 0.3,
     "catalyst": "None",
     "time": 30,
-    "yield": 81.2
+    "yield": 82.5
   },
   {
     "reactionId": "r2",
@@ -2669,7 +2669,7 @@
     "concentration": 3,
     "catalyst": "None",
     "time": 5,
-    "yield": 43.9
+    "yield": 48
   },
   {
     "reactionId": "r3",
@@ -2677,7 +2677,7 @@
     "concentration": 3,
     "catalyst": "None",
     "time": 20,
-    "yield": 47.5
+    "yield": 49.5
   },
   {
     "reactionId": "r3",
@@ -3629,7 +3629,7 @@
     "concentration": 3,
     "catalyst": "MnO2",
     "time": 5,
-    "yield": 58.9
+    "yield": 63.5
   },
   {
     "reactionId": "r3",
@@ -7637,7 +7637,7 @@
     "concentration": 1,
     "catalyst": "None",
     "time": 3,
-    "yield": 57
+    "yield": 57.8
   },
   {
     "reactionId": "r5",
@@ -7669,7 +7669,7 @@
     "concentration": 3,
     "catalyst": "None",
     "time": 1,
-    "yield": 66.7
+    "yield": 70.5
   },
   {
     "reactionId": "r5",
@@ -7877,7 +7877,7 @@
     "concentration": 3,
     "catalyst": "None",
     "time": 3,
-    "yield": 65.4
+    "yield": 70.5
   },
   {
     "reactionId": "r5",
@@ -8222,5 +8222,45 @@
     "catalyst": "None",
     "time": 10,
     "yield": 50.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 6,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 65.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 70
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 74
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 66.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 7,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 87
   }
 ]

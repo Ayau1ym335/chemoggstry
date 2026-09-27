@@ -1,8 +1,6 @@
 'use strict';
 
-const runsStore        = require('../repositories/runsStore');
-const dataRepository   = require('../repositories/dataRepository');
-const { suggestNextConditions } = require('../services/suggestNextConditions');
+const { getNextSuggestion } = require('../services/nextService');
 
 const nextController = {
   /**
@@ -16,36 +14,7 @@ const nextController = {
   getNext: (req, res, next) => {
     try {
       const { id: runId } = req.params;
-
-      const run = runsStore.getRunById(runId);
-      if (!run) {
-        return res.status(404).json({
-          error: { code: 'RUN_NOT_FOUND', message: `Run '${runId}' not found.` }
-        });
-      }
-
-      if (run.status === 'completed') {
-        return res.status(409).json({
-          error: { code: 'RUN_ALREADY_COMPLETED', message: `Run '${runId}' is already completed.` }
-        });
-      }
-
-      const reaction = dataRepository.getReactionById(run.reactionId);
-      if (!reaction) {
-        return res.status(500).json({
-          error: { code: 'INTERNAL_DATA_INCONSISTENCY', message: 'Reaction data not found.' }
-        });
-      }
-
-      const experiments = dataRepository.getExperimentsByReactionId(run.reactionId);
-      const suggested = suggestNextConditions(
-        run.reactionId,
-        run.history,
-        run.goal,
-        reaction.parametersRange,
-        experiments
-      );
-
+      const suggested = getNextSuggestion(runId);
       return res.status(200).json({ suggestedConditions: suggested });
     } catch (err) {
       next(err);

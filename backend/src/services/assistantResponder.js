@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 /**
  * assistantResponder.js
@@ -89,7 +89,7 @@ function fmtDelta(delta) {
 const TEMPLATES = {
 
   why_temperature_changed(ctx) {
-    const { currentIteration: cur, previousIteration: prev, yieldDelta, changedParameter } = ctx;
+    const { currentIteration: cur, previousIteration: prev, actualYieldDelta, changedParameter } = ctx;
 
     if (!prev) {
       const cond = cur ? cur.conditions : null;
@@ -108,26 +108,26 @@ const TEMPLATES = {
     }
 
     const direction = cur.conditions.temperature > prev.conditions.temperature ? 'raised' : 'lowered';
-    if (yieldDelta > 0.05) {
+    if (actualYieldDelta > 0.05) {
       return `In the previous step, ${direction} the temperature to ${cur.conditions.temperature}°C ` +
-        `increased the yield from ${prev.yield}% to ${cur.yield}% (${fmtDelta(yieldDelta)}). ` +
+        `increased the yield from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}). ` +
         `This suggests the reaction benefits from higher thermal energy at this stage. ` +
         `The algorithm continues exploring in this direction.`;
-    } else if (yieldDelta < -0.05) {
+    } else if (actualYieldDelta < -0.05) {
       return `${direction.charAt(0).toUpperCase() + direction.slice(1)} the temperature to ${cur.conditions.temperature}°C ` +
-        `caused the yield to fall from ${prev.yield}% to ${cur.yield}% (${fmtDelta(yieldDelta)}). ` +
+        `caused the yield to fall from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}). ` +
         `This indicates the reaction is sensitive to temperature in this range. ` +
         `The algorithm will now explore other parameters to recover the yield.`;
     } else {
       return `The temperature was ${direction} to ${cur.conditions.temperature}°C, ` +
-        `but the yield remained essentially unchanged at ${cur.yield}%. ` +
+        `but the yield remained essentially unchanged at ${cur.actualYield}%. ` +
         `This suggests the reaction is relatively insensitive to temperature in this range. ` +
         `The algorithm will investigate other parameters next.`;
     }
   },
 
   why_catalyst_chosen(ctx) {
-    const { currentIteration: cur, previousIteration: prev, yieldDelta } = ctx;
+    const { currentIteration: cur, previousIteration: prev, actualYieldDelta } = ctx;
 
     if (!prev) {
       const cat = cur ? cur.conditions.catalyst : 'None';
@@ -144,7 +144,7 @@ const TEMPLATES = {
     const curCat  = cur.conditions.catalyst;
 
     if (prevCat === 'None' && curCat !== 'None') {
-      return `Adding ${curCat} as a catalyst boosted the yield from ${prev.yield}% to ${cur.yield}% (${fmtDelta(yieldDelta)}). ` +
+      return `Adding ${curCat} as a catalyst boosted the yield from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}). ` +
         `Catalysts lower the activation energy of the reaction, allowing more product to form ` +
         `under the same temperature and concentration conditions. ` +
         `This confirms that ${curCat} is effective for ${ctx.reactionName}.`;
@@ -152,39 +152,39 @@ const TEMPLATES = {
 
     if (prevCat !== 'None' && curCat !== 'None' && prevCat !== curCat) {
       return `The catalyst was switched from ${prevCat} to ${curCat}. ` +
-        (yieldDelta > 0
-          ? `This improved the yield by ${fmtDelta(yieldDelta)}, reaching ${cur.yield}%. ${curCat} appears to be a better match for the conditions of ${ctx.reactionName}.`
-          : `The yield changed by ${fmtDelta(yieldDelta)} to ${cur.yield}%. The algorithm is evaluating which catalyst is optimal for these conditions.`);
+        (actualYieldDelta > 0
+          ? `This improved the yield by ${fmtDelta(actualYieldDelta)}, reaching ${cur.actualYield}%. ${curCat} appears to be a better match for the conditions of ${ctx.reactionName}.`
+          : `The yield changed by ${fmtDelta(actualYieldDelta)} to ${cur.actualYield}%. The algorithm is evaluating which catalyst is optimal for these conditions.`);
     }
 
     if (curCat === 'None') {
       return `This experiment runs without a catalyst. ` +
-        `The current yield of ${cur.yield}% provides a benchmark showing how well ${ctx.reactionName} ` +
+        `The current yield of ${cur.actualYield}% provides a benchmark showing how well ${ctx.reactionName} ` +
         `proceeds under its own kinetics. If a catalyst is added later, this value serves as the baseline for comparison.`;
     }
 
     return `The catalyst remains ${curCat} for this step. ` +
       `The algorithm is currently optimising other parameters while keeping the catalyst fixed. ` +
-      `The current yield is ${cur.yield}%.`;
+      `The current yield is ${cur.actualYield}%.`;
   },
 
   why_yield_decreased(ctx) {
-    const { currentIteration: cur, previousIteration: prev, yieldDelta, changedParameter } = ctx;
+    const { currentIteration: cur, previousIteration: prev, actualYieldDelta, changedParameter } = ctx;
 
     if (!prev) {
       return `This is the first experiment for ${ctx.reactionName} — there is no previous result to compare against. ` +
-        `The current yield is ${cur ? cur.yield + '%' : '—'}. ` +
+        `The current yield is ${cur ? cur.actualYield + '%' : '—'}. ` +
         `Future experiments will build a trajectory to determine whether the yield is improving or declining.`;
     }
 
-    if (yieldDelta !== null && yieldDelta < -0.05) {
-      return `The yield fell from ${prev.yield}% to ${cur.yield}% (${fmtDelta(yieldDelta)}) ` +
+    if (actualYieldDelta !== null && actualYieldDelta < -0.05) {
+      return `The yield fell from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}) ` +
         `when ${fmtParam(changedParameter)} was changed. ` +
         `This means moving ${fmtParam(changedParameter)} in that direction pushed conditions away from the optimum. ` +
         `The algorithm will now reverse course or try a different parameter to recover the yield.`;
     }
 
-    return `The yield did not actually decrease this step — it moved from ${prev.yield}% to ${cur.yield}% (${fmtDelta(yieldDelta)}). ` +
+    return `The yield did not actually decrease this step — it moved from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}). ` +
       `If you are seeing a lower number elsewhere, please check the full history table. ` +
       `The algorithm is actively working to ${goalLabel(ctx.goal)} for ${ctx.reactionName}.`;
   },
@@ -202,10 +202,10 @@ const TEMPLATES = {
       base += ` The current concentration is ${curConc} M.`;
     }
     if (optConc !== null && curConc !== null && optConc !== curConc) {
-      base += ` The best result so far was achieved at ${optConc} M (${optimalSoFar.yield}% yield), ` +
+      base += ` The best result so far was achieved at ${optConc} M (${optimalSoFar.actualYield}% yield), ` +
         `suggesting that concentration around that value is more favourable for ${ctx.reactionName}.`;
     } else if (optConc !== null) {
-      base += ` The best result found so far (${optimalSoFar.yield}%) was at ${optConc} M — ` +
+      base += ` The best result found so far (${optimalSoFar.actualYield}%) was at ${optConc} M — ` +
         `the algorithm will continue exploring whether higher concentrations improve this further.`;
     }
 
@@ -224,18 +224,18 @@ const TEMPLATES = {
 
     if (isFinalIteration) {
       return `After all experiments, the best conditions found for ${reactionName} are: ${condStr}. ` +
-        `This configuration achieved a yield of ${opt.yield}%, the highest recorded across all ${ctx.currentIteration ? ctx.currentIteration.iterationNumber : '?'} iterations. ` +
+        `This configuration achieved a yield of ${opt.actualYield}%, the highest recorded across all ${ctx.currentIteration ? ctx.currentIteration.iterationNumber : '?'} iterations. ` +
         `The goal was to ${goalLabel(goal)}, and this result represents the optimum within the explored parameter space.`;
     }
 
     return `So far, the best conditions found for ${reactionName} are: ${condStr}, ` +
-      `achieving a yield of ${opt.yield}% (experiment #${opt.iterationNumber}). ` +
+      `achieving a yield of ${opt.actualYield}% (experiment #${opt.iterationNumber}). ` +
       `The run is still in progress — further experiments may find even better conditions. ` +
       `The algorithm continues to explore the parameter space with the goal to ${goalLabel(goal)}.`;
   },
 
   what_did_previous_show(ctx) {
-    const { currentIteration: cur, previousIteration: prev, yieldDelta } = ctx;
+    const { currentIteration: cur, previousIteration: prev, actualYieldDelta } = ctx;
 
     if (!prev) {
       return `There is no previous experiment to reference — this is the first iteration. ` +
@@ -243,14 +243,14 @@ const TEMPLATES = {
         `Once the second experiment is complete, you will be able to compare results here.`;
     }
 
-    const trend = yieldDelta > 0.05 ? `increased by ${fmtDelta(yieldDelta)}`
-      : yieldDelta < -0.05          ? `decreased by ${fmtDelta(yieldDelta)}`
+    const trend = actualYieldDelta > 0.05 ? `increased by ${fmtDelta(actualYieldDelta)}`
+      : actualYieldDelta < -0.05          ? `decreased by ${fmtDelta(actualYieldDelta)}`
       : `remained approximately the same`;
 
     return `Experiment #${prev.iterationNumber} tested ${fmtConditions(prev.conditions)} ` +
-      `and achieved a yield of ${prev.yield}%. ` +
+      `and achieved a yield of ${prev.actualYield}%. ` +
       `Compared to the following experiment (#${cur.iterationNumber}), the yield ${trend}, ` +
-      `reaching ${cur.yield}%. ` +
+      `reaching ${cur.actualYield}%. ` +
       `This progression informs the algorithm about which parameter changes are productive.`;
   },
 
@@ -265,13 +265,41 @@ const TEMPLATES = {
     }
 
     const iterN = cur.iterationNumber;
-    const optStr = opt ? `The best result so far is ${opt.yield}% yield at ${fmtConditions(opt.conditions)}.`
+    const optStr = opt ? `The best result so far is ${opt.actualYield}% yield at ${fmtConditions(opt.conditions)}.`
                        : '';
 
     return `The optimization for ${reactionName} is in progress — ${iterN} experiment${iterN > 1 ? 's' : ''} completed. ` +
       `${optStr} Goal: ${goalLabel(goal)}. ` +
       `You can ask about why a specific parameter was changed, what the previous experiment showed, ` +
       `or why certain conditions are considered optimal.`;
+  },
+
+  why_actual_differs_from_predicted(ctx) {
+    const { predictedYield, actualYield, predictionAccuracy } = ctx;
+
+    // requiredContextFields guard — == null catches both null and undefined
+    // (realistic when asked before the first registered iteration)
+    if (predictedYield == null || actualYield == null || predictionAccuracy == null) {
+      return `Ещё нет данных для сравнения предсказания и фактического результата — ` +
+        `сначала завершите хотя бы один эксперимент.`;
+    }
+
+    // Round to whole integer to prevent float noise (e.g. 3.4999999)
+    const accuracyRounded = Math.round(predictionAccuracy);
+    const absAccuracy     = Math.abs(accuracyRounded);
+
+    // Threshold: ±3 pp is considered "accurate"
+    if (absAccuracy <= 3) {
+      return `Предсказание оказалось точным — прогнозировался результат ${predictedYield}%, вы получили ${actualYield}%.`;
+    }
+
+    if (accuracyRounded < 0) {
+      return `Ваш результат (${actualYield}%) оказался ниже, чем предсказывала модель (${predictedYield}%), на ${absAccuracy} п.п. ` +
+        `Это может означать, что реальные условия эксперимента немного отличались от тех, что заложены в базе данных.`;
+    }
+
+    return `Ваш результат (${actualYield}%) превысил предсказание (${predictedYield}%) на ${absAccuracy} п.п. — ` +
+      `выбранные условия сработали даже лучше ожидаемого.`;
   }
 };
 

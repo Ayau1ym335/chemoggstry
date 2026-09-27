@@ -1,0 +1,24 @@
+[
+  {
+    "substanceSymbols": ["Cl", "H", "Na", "O"],
+    "reactionId": "r1"
+  },
+  {
+    "substanceSymbols": ["Ag", "Cl", "N", "Na", "O"],
+    "reactionId": "r2"
+  },
+  {
+    "substanceSymbols": ["H", "O"],
+    "reactionId": "r3"
+  },
+  {
+    "substanceSymbols": ["C", "H", "O"],
+    "reactionId": "r4",
+    "_comment": "Note: r4 and r5 both share the exact same set of atoms (C, H, O). As per MVP design, the lookup engine will return the first match (r4). r5 remains accessible via Quick Select."
+  },
+  {
+    "substanceSymbols": ["C", "H", "O"],
+    "reactionId": "r5",
+    "_comment": "Shadowed by r4 due to identical atom signature."
+  }
+]

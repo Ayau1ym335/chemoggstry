@@ -1,90 +1,79 @@
+/* ─── YieldChart — chocolate-cream theme ────────────────────────────── */
 .yield-chart-container {
-  background: var(--glass-bg);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid var(--glass-border);
-  border-radius: 16px;
-  padding: 1.5rem;
-  margin-top: 1.5rem;
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-top: 0;
+  box-shadow: var(--shadow);
 }
 
 .yield-chart-container h3 {
-  margin-top: 0;
-  margin-bottom: 1.25rem;
-  font-size: 1.25rem;
-  color: var(--text-main);
-  border-bottom: 1px solid rgba(255,255,255,0.1);
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--text-muted);
+  margin: 0 0 1rem;
+  border-bottom: 1px solid var(--border);
   padding-bottom: 0.75rem;
 }
 
 .svg-wrapper {
   width: 100%;
-  max-width: 600px;
+  max-width: 550px;
   margin: 0 auto;
 }
 
-.yield-svg {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+.yield-svg { width: 100%; height: auto; display: block; }
 
+/* SVG styles — colours from the chocolate-cream palette */
 .grid-line {
-  stroke: rgba(255, 255, 255, 0.1);
+  stroke: var(--border);
   stroke-width: 1;
   stroke-dasharray: 4 4;
 }
 
 .axis-label {
   fill: var(--text-muted);
-  font-size: 12px;
+  font-size: 11px;
   font-family: 'Inter', sans-serif;
-  alignment-baseline: middle;
 }
 
 .axis-label-x {
   fill: var(--text-muted);
-  font-size: 13px;
+  font-size: 12px;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
 }
 
+/* Bars: warm translucent brown fill, accent stroke */
 .bar-rect {
-  fill: rgba(99, 102, 241, 0.2);
-  stroke: var(--primary-color);
+  fill: rgba(122, 59, 30, 0.15);
+  stroke: var(--accent);
   stroke-width: 2;
-  transition: all 0.3s ease;
+  transition: fill 0.2s ease;
 }
 
-.bar-rect:hover {
-  fill: rgba(99, 102, 241, 0.4);
-}
+.bar-rect:hover { fill: rgba(122, 59, 30, 0.3); }
 
 .bar-label {
-  fill: #a5b4fc;
-  font-size: 13px;
+  fill: var(--accent-dark);
+  font-size: 12px;
   font-weight: 700;
   font-family: 'Inter', sans-serif;
 }
 
+/* Trend line: accent-hover dashed */
 .trend-line {
-  stroke: var(--secondary-color);
+  stroke: var(--accent-hover);
   stroke-width: 2;
-  stroke-dasharray: 6 4;
+  stroke-dasharray: 5 3;
   opacity: 0.8;
 }
 
+/* Data-point dot */
 .bar-point {
-  fill: var(--secondary-color);
-  stroke: var(--bg-darker);
+  fill: var(--accent);
+  stroke: var(--surface);
   stroke-width: 2;
-}
-
-.slide-up {
-  animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-}
-
-@keyframes slideUpFade {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
 }

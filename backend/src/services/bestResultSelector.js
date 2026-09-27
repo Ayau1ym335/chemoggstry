@@ -4,6 +4,8 @@
  * bestResultSelector.js - Finds the optimal experiment iteration based on the goal.
  */
 
+const { YIELD_TOLERANCE } = require('./constants');
+
 function selectBestResult(history, goal) {
   if (!history || history.length === 0) {
     return null;
@@ -12,18 +14,17 @@ function selectBestResult(history, goal) {
   if (goal === 'maxYield') {
     return history.reduce((best, current) => {
       // If yields are basically equal, prefer the one that came first (lower iteration number)
-      if (Math.abs(current.yield - best.yield) < 0.001) {
+      if (Math.abs(current.actualYield - best.actualYield) < 0.001) {
         return current.iterationNumber < best.iterationNumber ? current : best;
       }
-      return current.yield > best.yield ? current : best;
+      return current.actualYield > best.actualYield ? current : best;
     }, history[0]);
   } else if (goal === 'minTime') {
-    const bestYieldSeen = Math.max(...history.map(i => i.yield));
-    const YIELD_TOLERANCE = 5;
+    const bestYieldSeen = Math.max(...history.map(i => i.actualYield));
     const threshold = bestYieldSeen - YIELD_TOLERANCE;
 
     // Filter acceptable iterations based on yield
-    const acceptable = history.filter(h => h.yield >= threshold);
+    const acceptable = history.filter(h => h.actualYield >= threshold);
 
     if (acceptable.length === 0) {
        // Should theoretically never happen as the point with bestYieldSeen is in history
@@ -35,10 +36,10 @@ function selectBestResult(history, goal) {
        const tDiff = current.conditions.time - best.conditions.time;
        // If time is the same, prefer the one with better yield
        if (Math.abs(tDiff) < 0.001) {
-          if (Math.abs(current.yield - best.yield) < 0.001) {
+          if (Math.abs(current.actualYield - best.actualYield) < 0.001) {
              return current.iterationNumber < best.iterationNumber ? current : best;
           }
-          return current.yield > best.yield ? current : best;
+          return current.actualYield > best.actualYield ? current : best;
        }
        return tDiff < 0 ? current : best;
     }, acceptable[0]);

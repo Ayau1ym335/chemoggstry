@@ -38,7 +38,8 @@ const { TEMPLATES } = require('./questionTemplates');
 function normalize(text) {
   const full = text
     .toLowerCase()
-    .replace(/[^\w\s]/g, ' ')
+    // Preserve Unicode letters and digits; strip only punctuation/symbols
+    .replace(/[^\p{L}\p{N}\s]/gu, ' ')
     .replace(/\s+/g, ' ')
     .trim();
   const tokens = new Set(full.split(' ').filter(Boolean));
@@ -52,7 +53,7 @@ function normalize(text) {
  */
 function groupMatches(group, full, tokens) {
   return group.some(keyword => {
-    const kw = keyword.toLowerCase().replace(/[^\w\s]/g, ' ').replace(/\s+/g, ' ').trim();
+    const kw = keyword.toLowerCase().replace(/[^\p{L}\p{N}\s]/gu, ' ').replace(/\s+/g, ' ').trim();
     if (kw.includes(' ')) {
       // Multi-word phrase: substring match
       return full.includes(kw);

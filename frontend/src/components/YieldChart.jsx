@@ -47,7 +47,7 @@ export default function YieldChart({ history }) {
             const gap = (chartW - barW * numBars) / (numBars + 1);
             const x = paddingX + gap + i * (barW + gap);
             
-            const barH = (run.yield / maxY) * chartH;
+            const barH = (run.actualYield / maxY) * chartH;
             const y = height - paddingY - barH;
 
             // Connect lines
@@ -55,7 +55,7 @@ export default function YieldChart({ history }) {
             let line = null;
             if (!isLast) {
               const nextRun = history[i + 1];
-              const nextBarH = (nextRun.yield / maxY) * chartH;
+              const nextBarH = (nextRun.actualYield / maxY) * chartH;
               const nextY = height - paddingY - nextBarH;
               const nextX = paddingX + gap + (i + 1) * (barW + gap);
               line = (
@@ -83,7 +83,7 @@ export default function YieldChart({ history }) {
                 <circle cx={x + barW / 2} cy={y} r={4} className="bar-point" />
 
                 <text x={x + barW / 2} y={y - 12} textAnchor="middle" className="bar-label">
-                  {run.yield.toFixed(1)}%
+                  {run.actualYield.toFixed(1)}%
                 </text>
                 
                 <text x={x + barW / 2} y={height - paddingY + 20} textAnchor="middle" className="axis-label-x">

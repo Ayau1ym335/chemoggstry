@@ -1,0 +1,82 @@
+.periodic-table-grid {
+  display: grid;
+  grid-template-columns: repeat(18, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  gap: 8px;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow-x: auto;
+  padding: 10px;
+}
+
+.element-cell {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  aspect-ratio: 1;
+  padding: 4px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  min-height: 40px;
+  min-width: 40px;
+}
+
+.element-cell:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.element-cell.dimmed {
+  opacity: 0.18;
+  transform: none;
+  pointer-events: none;
+}
+
+.element-cell.selected {
+  outline: 3px solid var(--accent);
+  outline-offset: 1px;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(122, 59, 30, 0.25);
+  z-index: 2;
+}
+
+/* Color coding by category, aligned with cream theme */
+.category-non-metal {
+  background: #fdf6ef; /* Light orange-ish cream */
+  border-color: #fbdca8;
+  color: #7a3b1e;
+}
+.category-metal {
+  background: #eff6ff; /* Soft blue */
+  border-color: #bfdbfe;
+  color: #1e3a8a;
+}
+.category-metalloid {
+  background: #f0fdf4; /* Soft green */
+  border-color: #bbf7d0;
+  color: #14532d;
+}
+.category-noble-gas {
+  background: #f5f3ff; /* Soft purple */
+  border-color: #ddd6fe;
+  color: #4c1d95;
+}
+
+.element-atomic {
+  position: absolute;
+  top: 4px;
+  left: 4px;
+  font-size: 0.6rem;
+  opacity: 0.7;
+}
+
+.element-symbol {
+  font-size: 1.1rem;
+  font-weight: 700;
+}

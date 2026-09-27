@@ -27,7 +27,7 @@ export default function HistoryTable({ history }) {
                 <td>{run.conditions.concentration}</td>
                 <td>{run.conditions.catalyst}</td>
                 <td>{run.conditions.time}</td>
-                <td className="highlight-yield">{run.yield.toFixed(1)}%</td>
+                <td className="highlight-yield">{run.actualYield.toFixed(1)}%</td>
               </tr>
             ))}
           </tbody>

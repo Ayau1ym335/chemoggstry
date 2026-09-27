@@ -1,7 +1,8 @@
-﻿'use strict';
+'use strict';
 
 const dataRepository = require('../repositories/dataRepository');
 const runService = require('../services/runService');
+const { isNonEmptyString } = require('../utils/validate');
 
 const runsController = {
   /**
@@ -16,7 +17,7 @@ const runsController = {
       const { reactionId, goal } = req.body;
 
       // 1. reactionId: presence check
-      if (!reactionId || typeof reactionId !== 'string' || reactionId.trim() === '') {
+      if (!isNonEmptyString(reactionId)) {
         return res.status(400).json({
           error: {
             code: 'MISSING_REACTION_ID',
@@ -37,7 +38,7 @@ const runsController = {
       }
 
       // 3. goal: presence check (type + enum validated inside runService)
-      if (!goal || typeof goal !== 'string' || goal.trim() === '') {
+      if (!isNonEmptyString(goal)) {
         return res.status(400).json({
           error: {
             code: 'MISSING_GOAL',

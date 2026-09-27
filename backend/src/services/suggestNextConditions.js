@@ -1,276 +1,211 @@
-﻿'use strict';
+'use strict';
 
 /**
- * suggestNextConditions.js — Greedy hill-climbing algorithm for experiment suggestion.
+ * suggestNextConditions.js — Algorithmic experiment suggestion v2
  *
- * ALGORITHM OVERVIEW
- * ==================
- * Goal: deterministic, explainable greedy search on the experiment dataset.
+ * ALGORITHM OVERVIEW (v2)
+ * =======================
+ * Goal: Suggest next conditions based on actual human data and efficiency trends,
+ * replacing the pure dataset-greedy search.
  *
- * Iteration 1 (empty history):
- *   Return a fixed "mid-range" starting point — NOT random:
- *     - temperature: middle of range, snapped to nearest grid step
- *     - concentration: minimum of range (start conservative)
- *     - catalyst: 'None' (start without catalyst)
- *     - time: middle of range, snapped to nearest grid step
- *   This makes the demo fully reproducible and allows TASK 17 (AI explanations)
- *   to say "we started from a conservative baseline".
- *
- * Iterations 2-4 (steepest-ascent hill-climbing):
- *   1. Take the last iteration as the current position.
- *   2. Generate all ONE-STEP neighbors by changing exactly one parameter at a time.
- *      Neighbors are restricted to actual grid values in parametersRange, so that
- *      findNearest always returns a meaningful (not "snapped-back") result.
- *   3. Filter out already-tried conditions (no repeats guaranteed).
- *   4. Score each fresh neighbor via findNearest (pure lookup, no side effects).
- *   5. Pick the highest-scoring neighbor (maxYield) or lowest-time neighbor
- *      above yield threshold (minTime).
- *   6. Tie-break: parameter priority order — temperature > catalyst > concentration > time.
- *
- * WHY ONE PARAMETER AT A TIME:
- *   Changing a single parameter per step makes TASK 17/18 AI explanations trivial:
- *   "yield increased because temperature was raised from 50°C to 60°C".
- *   Multi-parameter jumps make causal attribution impossible.
- *
- * WHY STEEPEST-ASCENT (not momentum/gradient):
- *   On the smooth unimodal Gaussian surface of our dataset, steepest-ascent
- *   reliably converges to the global optimum in 3-4 steps. Momentum tracking
- *   adds complexity for no benefit on this dataset.
- *
- * DETERMINISM:
- *   - generateCandidates() iterates parameters in a fixed order.
- *   - findNearest() is deterministic (first-match tie-break, fixed dataset order).
- *   - Sort comparators use stable fallbacks (parameter priority index).
- *   Same history → same next suggestion, always.
+ * 1. Empty history: Return fixed "mid-range" starting point.
+ * 2. first_experiment: Heuristic default - raise temperature by one step.
+ * 3. improving: Continue moving the parameter that was changed in the LAST step, 
+ *    in the SAME direction, for one grid step.
+ * 4. declining / flat: Rollback from the last change, and try the NEXT parameter
+ *    in priority order (temperature -> catalyst -> concentration -> time).
+ * 5. Prediction accuracy heuristic: If predictionWasOptimistic === true for the
+ *    last 2 iterations, halve the grid step size.
+ * 6. Validation: Run the generated conditions through findNearest to snap them
+ *    to a valid dataset point so the prediction step makes sense.
+ * 7. Anti-loop: Ensure we don't suggest a condition already in history.
  */
 
 const { findNearest } = require('./findNearest');
+const { analyzeEfficiency } = require('./efficiencyService');
 
-// ── helpers ──────────────────────────────────────────────────────────────────
+const PARAMS_PRIORITY = ['temperature', 'catalyst', 'concentration', 'time'];
+
+function conditionKey(c) {
+  return `${c.temperature}|${Number(c.concentration.toFixed(6))}|${c.catalyst}|${c.time}`;
+}
 
 /**
- * Build the explicit list of valid grid values for a numeric parameter.
- * Uses the same rounding as the dataset generator (4 decimal places) to avoid
- * floating-point drift (e.g. 0.1+0.1+0.1 = 0.30000000000000004).
+ * Snap a value to the nearest valid grid value using min/max/step.
  */
-function buildGrid(min, max, step) {
+function snapToGrid(value, min, max, step) {
+  // Build grid
   const grid = [];
   const decimals = (step.toString().split('.')[1] || '').length;
   for (let v = min; v <= max + 1e-9; v += step) {
     grid.push(Number(v.toFixed(decimals)));
   }
-  return grid;
-}
-
-/**
- * Snap a value to the nearest valid grid value.
- */
-function snapToGrid(value, grid) {
   return grid.reduce((best, g) => Math.abs(g - value) < Math.abs(best - value) ? g : best);
 }
 
 /**
- * Unique string key for a conditions object (used to detect duplicates).
- * Rounds numbers to 6 decimal places to absorb any residual float noise.
+ * Calculate the step size, reducing it by half if the last 2 predictions were optimistic.
  */
-function conditionKey(c) {
-  return `${c.temperature}|${Number(c.concentration.toFixed(6))}|${c.catalyst}|${c.time}`;
-}
-
-// ── starting point ────────────────────────────────────────────────────────────
-
-/**
- * Fixed "iteration 1" starting conditions.
- * Mid-range temperature and time, minimum concentration, no catalyst.
- */
-function startingConditions(parametersRange) {
-  const { temperature, concentration, time, catalystOptions } = parametersRange;
-  const tGrid  = buildGrid(temperature.min,   temperature.max,   temperature.step);
-  const tiGrid = buildGrid(time.min,          time.max,          time.step);
-
-  const midTemp = snapToGrid((temperature.min + temperature.max) / 2, tGrid);
-  const midTime = snapToGrid((time.min        + time.max)        / 2, tiGrid);
-
-  return {
-    temperature:   midTemp,
-    concentration: concentration.min,
-    catalyst:      'None',
-    time:          midTime
-  };
-}
-
-// ── neighbor generation ───────────────────────────────────────────────────────
-
-/**
- * Generate all one-step neighbors of `conditions` by changing exactly one
- * parameter at a time. Candidates are tagged with a `_priority` index for
- * deterministic tie-breaking: 0=temperature, 1=catalyst, 2=concentration, 3=time.
- *
- * Grid values are pre-computed so that every neighbor maps to a real dataset
- * entry — no halfway points that findNearest would "snap back" to the origin.
- */
-function generateNeighbors(conditions, parametersRange) {
-  const { temperature, concentration, time, catalystOptions } = parametersRange;
-  const tGrid  = buildGrid(temperature.min,   temperature.max,   temperature.step);
-  const cGrid  = buildGrid(concentration.min, concentration.max, concentration.step);
-  const tiGrid = buildGrid(time.min,          time.max,          time.step);
-
-  const tIdx  = tGrid.findIndex(v => Math.abs(v - conditions.temperature)   < 1e-9);
-  const cIdx  = cGrid.findIndex(v => Math.abs(v - conditions.concentration) < 1e-9);
-  const tiIdx = tiGrid.findIndex(v => Math.abs(v - conditions.time)         < 1e-9);
-
-  const candidates = [];
-
-  // 1. Temperature (priority 0)
-  if (tIdx + 1 < tGrid.length)  candidates.push({ ...conditions, temperature: tGrid[tIdx + 1], _priority: 0 });
-  if (tIdx - 1 >= 0)            candidates.push({ ...conditions, temperature: tGrid[tIdx - 1], _priority: 0 });
-
-  // 2. Catalyst (priority 1)
-  for (const cat of catalystOptions) {
-    if (cat !== conditions.catalyst) {
-      candidates.push({ ...conditions, catalyst: cat, _priority: 1 });
+function getStepSize(param, parametersRange, history) {
+  let step = parametersRange[param].step;
+  if (history.length >= 2) {
+    // Check last 2 iterations for optimism
+    const eff1 = analyzeEfficiency(history);
+    const eff2 = analyzeEfficiency(history.slice(0, history.length - 1));
+    if (eff1 && eff1.predictionWasOptimistic && eff2 && eff2.predictionWasOptimistic) {
+      step = step / 2;
     }
   }
-
-  // 3. Concentration (priority 2)
-  if (cIdx + 1 < cGrid.length)  candidates.push({ ...conditions, concentration: cGrid[cIdx + 1], _priority: 2 });
-  if (cIdx - 1 >= 0)            candidates.push({ ...conditions, concentration: cGrid[cIdx - 1], _priority: 2 });
-
-  // 4. Time (priority 3)
-  if (tiIdx + 1 < tiGrid.length) candidates.push({ ...conditions, time: tiGrid[tiIdx + 1], _priority: 3 });
-  if (tiIdx - 1 >= 0)            candidates.push({ ...conditions, time: tiGrid[tiIdx - 1], _priority: 3 });
-
-  return candidates;
+  return step;
 }
 
-// ── scoring & selection ───────────────────────────────────────────────────────
-
-/**
- * Score a list of candidate conditions via findNearest and select the best
- * according to the goal.
- *
- * @param {Object[]} candidates    - From generateNeighbors, already filtered for freshness.
- * @param {string}   reactionId
- * @param {string}   goal          - 'maxYield' | 'minTime'
- * @param {Object[]} experiments   - Pre-filtered experiment dataset for this reaction.
- * @param {Object}   parametersRange
- * @param {number}   bestYieldSeen - Highest yield recorded in history so far.
- * @returns {Object} The best candidate conditions (without internal _priority tag).
- */
-function selectBest(candidates, reactionId, goal, experiments, parametersRange, bestYieldSeen) {
-  const scored = candidates.map(candidate => {
-    const match = findNearest(reactionId, candidate, experiments, parametersRange);
-    return {
-      conditions:     candidate,
-      estimatedYield: match ? match.yield : 0,
-      priority:       candidate._priority !== undefined ? candidate._priority : 99
-    };
-  });
-
-  let best;
-
-  if (goal === 'maxYield') {
-    // Sort: highest estimated yield first; tie-break by parameter priority (lower = preferred)
-    scored.sort((a, b) => {
-      if (Math.abs(b.estimatedYield - a.estimatedYield) > 0.001) {
-        return b.estimatedYield - a.estimatedYield;
-      }
-      return a.priority - b.priority;
-    });
-    best = scored[0];
-
-  } else {
-    // minTime: prefer lower time when yield stays within 5pp of the best seen so far.
-    // If nothing satisfies the yield threshold, fall back to maximising yield first.
-    const YIELD_TOLERANCE = 5;
-    const threshold = bestYieldSeen - YIELD_TOLERANCE;
-
-    const acceptable = scored.filter(s => s.estimatedYield >= threshold);
-
-    if (acceptable.length > 0) {
-      // Among acceptable: lowest time first, then highest yield, then priority
-      acceptable.sort((a, b) => {
-        const tDiff = a.conditions.time - b.conditions.time;
-        if (Math.abs(tDiff) > 0.001) return tDiff;
-        if (Math.abs(b.estimatedYield - a.estimatedYield) > 0.001) {
-          return b.estimatedYield - a.estimatedYield;
-        }
-        return a.priority - b.priority;
-      });
-      best = acceptable[0];
-    } else {
-      // Not yet at a good yield — maximise yield first, get time reduction later
-      scored.sort((a, b) => {
-        if (Math.abs(b.estimatedYield - a.estimatedYield) > 0.001) {
-          return b.estimatedYield - a.estimatedYield;
-        }
-        return a.priority - b.priority;
-      });
-      best = scored[0];
+function getChangedParameter(prevCond, currCond) {
+  for (const p of PARAMS_PRIORITY) {
+    if (prevCond[p] !== currCond[p]) {
+      return p;
     }
   }
-
-  // Strip the internal _priority tag before returning
-  const { _priority, ...cleanConditions } = best.conditions;
-  return cleanConditions;
+  return 'temperature';
 }
 
-// ── main exported function ────────────────────────────────────────────────────
+function getNextCatalyst(currentCat, options) {
+  const idx = options.indexOf(currentCat);
+  if (idx >= 0 && idx < options.length - 1) {
+    return options[idx + 1];
+  }
+  return null;
+}
 
 /**
- * Suggest the next experimental conditions for an optimization run.
- * Pure function — deterministic for the same inputs.
- *
- * @param {string}   reactionId
- * @param {Object[]} history        - Past iterations [{ conditions, yield }]
- * @param {string}   goal           - 'maxYield' | 'minTime'
- * @param {Object}   parametersRange - From reactions.json
- * @param {Object[]} experiments    - Pre-filtered experiment dataset
- * @returns {{ temperature, concentration, catalyst, time }}
+ * Main suggestion function
  */
 function suggestNextConditions(reactionId, history, goal, parametersRange, experiments) {
-  // ── Iteration 1: fixed starting point ────────────────────────────────────
+  // 1. Empty history -> Fixed starting point
   if (!history || history.length === 0) {
-    return startingConditions(parametersRange);
+    const { temperature, concentration, time } = parametersRange;
+    const midTemp = snapToGrid((temperature.min + temperature.max) / 2, temperature.min, temperature.max, temperature.step);
+    const midTime = snapToGrid((time.min + time.max) / 2, time.min, time.max, time.step);
+    
+    return {
+      temperature: midTemp,
+      concentration: concentration.min,
+      catalyst: 'None',
+      time: midTime
+    };
   }
 
   const usedKeys = new Set(history.map(iter => conditionKey(iter.conditions)));
-  const bestYieldSeen = Math.max(...history.map(i => i.yield));
+  const eff = analyzeEfficiency(history);
+  const baseConditions = history[history.length - 1].conditions;
+  
+  let changedParam = null;
+  let paramChangeDirection = 1;
 
-  // ── Primary: neighbors of the last position ───────────────────────────────
-  const lastConditions = history[history.length - 1].conditions;
-  let candidates = generateNeighbors(lastConditions, parametersRange)
-    .filter(c => !usedKeys.has(conditionKey(c)));
-
-  // ── Fallback 1: neighbors of the best yield point ever seen ──────────────
-  // (handles case where last point was a local descent from a previous peak)
-  if (candidates.length === 0) {
-    const bestIter = [...history].sort((a, b) => b.yield - a.yield)[0];
-    candidates = generateNeighbors(bestIter.conditions, parametersRange)
-      .filter(c => !usedKeys.has(conditionKey(c)));
+  if (history.length >= 2) {
+    const prevConditions = history[history.length - 2].conditions;
+    changedParam = getChangedParameter(prevConditions, baseConditions);
+    if (changedParam !== 'catalyst') {
+      paramChangeDirection = Math.sign(baseConditions[changedParam] - prevConditions[changedParam]) || 1;
+    }
+  } else {
+    changedParam = 'temperature';
+    paramChangeDirection = 1;
   }
 
-  // ── Fallback 2: collect ALL unseen neighbors from ALL history points ──────
-  if (candidates.length === 0) {
-    const seenNeighborKeys = new Set();
-    for (const iter of history) {
-      for (const nb of generateNeighbors(iter.conditions, parametersRange)) {
-        const k = conditionKey(nb);
-        if (!usedKeys.has(k) && !seenNeighborKeys.has(k)) {
-          seenNeighborKeys.add(k);
-          candidates.push(nb);
+  let candidates = [];
+
+  const tryAddCandidate = (conds) => {
+    const match = findNearest(reactionId, conds, experiments, parametersRange);
+    if (match) {
+      // We extract exactly what findNearest matched to ensure it's a real dataset point
+      const matchedConds = {
+        temperature: match.matchedPoint.temperature,
+        concentration: match.matchedPoint.concentration,
+        catalyst: match.matchedPoint.catalyst,
+        time: match.matchedPoint.time
+      };
+      if (!usedKeys.has(conditionKey(matchedConds))) {
+        candidates.push(matchedConds);
+      }
+    }
+  };
+
+  if (eff.direction === 'first_experiment') {
+    // Default heuristic: raise temperature
+    let step = getStepSize('temperature', parametersRange, history);
+    let newCond = { ...baseConditions };
+    newCond.temperature += step;
+    tryAddCandidate(newCond);
+  } 
+  else if (eff.direction === 'improving') {
+    let newCond = { ...baseConditions };
+    if (changedParam === 'catalyst') {
+      // Catalyst improved things. We keep it, and move to the next parameter
+      const nextIdx = PARAMS_PRIORITY.indexOf(changedParam) + 1;
+      if (nextIdx < PARAMS_PRIORITY.length) {
+        const nextParam = PARAMS_PRIORITY[nextIdx];
+        if (nextParam !== 'catalyst') {
+          newCond[nextParam] += getStepSize(nextParam, parametersRange, history);
         }
+      }
+    } else {
+      // Continue moving same numeric parameter
+      let step = getStepSize(changedParam, parametersRange, history);
+      newCond[changedParam] += paramChangeDirection * step;
+    }
+    tryAddCandidate(newCond);
+  } 
+  else if (eff.direction === 'declining' || eff.direction === 'flat') {
+    // Rollback to previous
+    const rollbackCond = { ...history[history.length - 2].conditions };
+    const pIdx = PARAMS_PRIORITY.indexOf(changedParam);
+    
+    // Try NEXT parameter(s)
+    for (let i = pIdx + 1; i < PARAMS_PRIORITY.length; i++) {
+      const nextParam = PARAMS_PRIORITY[i];
+      let testCond = { ...rollbackCond };
+      
+      if (nextParam === 'catalyst') {
+        const nextCat = getNextCatalyst(testCond.catalyst, parametersRange.catalystOptions);
+        if (nextCat) {
+          testCond.catalyst = nextCat;
+          tryAddCandidate(testCond);
+        }
+      } else {
+        let step = getStepSize(nextParam, parametersRange, history);
+        testCond[nextParam] += step;
+        tryAddCandidate(testCond);
       }
     }
   }
 
-  // ── Final safety: return last conditions (should be unreachable in 4-step MVP) ─
-  if (candidates.length === 0) {
-    console.warn('[suggestNextConditions] No fresh candidates found — returning last conditions.');
-    return { ...lastConditions };
+  if (candidates.length > 0) {
+    return candidates[0];
   }
 
-  return selectBest(candidates, reactionId, goal, experiments, parametersRange, bestYieldSeen);
+  // Fallback: Generate ALL neighbors around the best seen point
+  const bestIter = [...history].sort((a, b) => b.actualYield - a.actualYield)[0];
+  const bestCond = bestIter.conditions;
+  for (const p of PARAMS_PRIORITY) {
+    if (p === 'catalyst') {
+      for (const cat of parametersRange.catalystOptions) {
+        if (cat !== bestCond.catalyst) {
+          tryAddCandidate({ ...bestCond, catalyst: cat });
+        }
+      }
+    } else {
+      let step = getStepSize(p, parametersRange, history);
+      tryAddCandidate({ ...bestCond, [p]: bestCond[p] + step });
+      tryAddCandidate({ ...bestCond, [p]: bestCond[p] - step });
+    }
+  }
+
+  if (candidates.length > 0) {
+    return candidates[0];
+  }
+
+  console.warn('[suggestNextConditions] No fresh candidates found — returning last conditions.');
+  return { ...baseConditions };
 }
 
 module.exports = { suggestNextConditions };

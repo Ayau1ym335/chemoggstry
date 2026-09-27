@@ -12,7 +12,7 @@ export default function OptimalConditionsCard({ optimalRun }) {
           <h3>Optimal Conditions</h3>
         </div>
         <div className="best-result-badge">
-          Best result: Yield {optimalRun.yield.toFixed(1)}%
+          Best result: Yield {optimalRun.actualYield.toFixed(1)}%
         </div>
       </div>
       

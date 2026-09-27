@@ -1,8 +1,9 @@
-﻿'use strict';
+'use strict';
 
 const { buildAiContext }    = require('../services/aiContextBuilder');
 const { matchQuestion }     = require('../services/questionMatcher');
 const { generateResponse }  = require('../services/assistantResponder');
+const { isNonEmptyString }  = require('../utils/validate');
 
 const assistantController = {
   /**
@@ -16,13 +17,13 @@ const assistantController = {
     try {
       const { runId, question } = req.body;
 
-      if (!runId || typeof runId !== 'string' || runId.trim() === '') {
+      if (!isNonEmptyString(runId)) {
         return res.status(400).json({
           error: { code: 'MISSING_RUN_ID', message: '"runId" is required.' }
         });
       }
 
-      if (!question || typeof question !== 'string' || question.trim() === '') {
+      if (!isNonEmptyString(question)) {
         return res.status(400).json({
           error: { code: 'MISSING_QUESTION', message: '"question" is required and must be a non-empty string.' }
         });

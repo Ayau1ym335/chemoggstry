@@ -1,83 +1,84 @@
+/* ─── OptimalConditionsCard — chocolate-cream theme ─────────────────── */
 .optimal-card {
-  background: linear-gradient(135deg, rgba(16, 185, 129, 0.15), rgba(16, 185, 129, 0.05));
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(16, 185, 129, 0.4);
-  border-radius: 16px;
-  padding: 1.5rem 2rem;
-  margin-top: 2rem;
-  box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+  background: var(--surface);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  margin-top: 1.25rem;
+  box-shadow: var(--shadow-lg);
+  border-left: 4px solid var(--green);
+  animation: slideUp 0.35s ease forwards;
 }
 
+/* Subtle pulse on the green border to draw the eye */
 .highlight-pulse {
-  animation: pulseGlow 2s infinite alternate;
+  animation: slideUp 0.35s ease forwards, borderPulse 2.5s 0.35s ease-in-out infinite alternate;
 }
 
-@keyframes pulseGlow {
-  from { box-shadow: 0 0 15px rgba(16, 185, 129, 0.1); }
-  to { box-shadow: 0 0 35px rgba(16, 185, 129, 0.3); }
+@keyframes borderPulse {
+  from { box-shadow: var(--shadow-lg); }
+  to   { box-shadow: var(--shadow-lg), 0 0 18px rgba(74, 124, 89, 0.25); }
 }
 
 .optimal-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid rgba(16, 185, 129, 0.2);
-  padding-bottom: 1rem;
-  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.25rem;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .optimal-title-group {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 .optimal-title-group h3 {
   margin: 0;
-  font-size: 1.5rem;
-  color: #34d399; /* Emerald 400 */
-  text-shadow: 0 0 10px rgba(52, 211, 153, 0.3);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-dark);
 }
 
-.trophy-icon {
-  font-size: 1.75rem;
-}
+.trophy-icon { font-size: 1.3rem; }
 
 .best-result-badge {
-  background: #10b981; /* Emerald 500 */
+  background: var(--green);
   color: #fff;
   font-weight: 700;
-  font-size: 1.2rem;
-  padding: 0.5rem 1.25rem;
-  border-radius: 9999px;
-  box-shadow: 0 4px 15px rgba(16, 185, 129, 0.4);
+  font-size: 1rem;
+  padding: 0.4rem 1.1rem;
+  border-radius: var(--radius-sm);
 }
 
 .optimal-body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 1.1rem;
 }
 
 .optimal-condition {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  background: var(--surface-2);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
 }
 
 .opt-label {
-  font-size: 0.85rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #6ee7b7; /* Emerald 300 */
-  opacity: 0.8;
+  color: var(--text-muted);
 }
 
 .opt-value {
-  font-size: 1.35rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  color: #fff;
+  color: var(--green);
 }

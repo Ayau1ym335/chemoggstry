@@ -1,21 +1,21 @@
 # E2E Full Cycle Check Report
 
-Generated on: 2026-09-27T09:48:37.407Z
+Generated on: 2026-09-27T10:49:50.697Z
 
 ## Reaction: r1 - Neutralization: HCl + NaOH | Goal: maxYield
 **Status:** ✅ PASS
 
 ### History
-1. T=50°C, C=0.1M, Cat=None, t=15m → Yield: 64.3%
-2. T=50°C, C=0.2M, Cat=None, t=15m → Yield: 73.1%
-3. T=50°C, C=0.2M, Cat=None, t=20m → Yield: 78.8%
-4. T=50°C, C=0.3M, Cat=None, t=20m → Yield: 78.8%
+1. T=50°C, C=0.1M, Cat=None, t=15m → Yield: 68.2%
+2. T=50°C, C=0.2M, Cat=None, t=15m → Yield: 74%
+3. T=50°C, C=0.2M, Cat=None, t=20m → Yield: 83.5%
+4. T=50°C, C=0.3M, Cat=None, t=20m → Yield: 83.5%
 
 ### Optimal Result
-Iter #3, Yield: 78.8%, Time: 20m
+Iter #3, Yield: 83.5%, Time: 20m
 
 ### Deltas (Optimal vs First)
-Yield Delta: +14.5 pp
+Yield Delta: +15.3 pp
 Time Delta: +5 min
 
 ---
@@ -24,16 +24,16 @@ Time Delta: +5 min
 **Status:** ✅ PASS
 
 ### History
-1. T=50°C, C=0.1M, Cat=None, t=15m → Yield: 64.3%
-2. T=50°C, C=0.1M, Cat=None, t=10m → Yield: 64.3%
-3. T=50°C, C=0.1M, Cat=None, t=5m → Yield: 59.4%
-4. T=50°C, C=0.2M, Cat=None, t=5m → Yield: 68.4%
+1. T=50°C, C=0.1M, Cat=None, t=15m → Yield: 68.2%
+2. T=50°C, C=0.1M, Cat=None, t=10m → Yield: 68.2%
+3. T=50°C, C=0.1M, Cat=None, t=5m → Yield: 66.5%
+4. T=50°C, C=0.2M, Cat=None, t=5m → Yield: 70%
 
 ### Optimal Result
-Iter #4, Yield: 68.4%, Time: 5m
+Iter #4, Yield: 70%, Time: 5m
 
 ### Deltas (Optimal vs First)
-Yield Delta: +4.1 pp
+Yield Delta: +1.8 pp
 Time Delta: -10 min
 
 ---
@@ -44,14 +44,14 @@ Time Delta: -10 min
 ### History
 1. T=30°C, C=0.1M, Cat=None, t=30m → Yield: 65.2%
 2. T=30°C, C=0.2M, Cat=None, t=30m → Yield: 77.2%
-3. T=30°C, C=0.3M, Cat=None, t=30m → Yield: 81.2%
-4. T=25°C, C=0.3M, Cat=None, t=30m → Yield: 81.2%
+3. T=30°C, C=0.3M, Cat=None, t=30m → Yield: 82.5%
+4. T=25°C, C=0.3M, Cat=None, t=30m → Yield: 82.5%
 
 ### Optimal Result
-Iter #3, Yield: 81.2%, Time: 30m
+Iter #3, Yield: 82.5%, Time: 30m
 
 ### Deltas (Optimal vs First)
-Yield Delta: +16.0 pp
+Yield Delta: +17.3 pp
 Time Delta: 0 min
 
 ---
@@ -78,17 +78,17 @@ Time Delta: -20 min
 **Status:** ✅ PASS
 
 ### History
-1. T=40°C, C=3M, Cat=None, t=30m → Yield: 48.7%
-2. T=40°C, C=3M, Cat=MnO2, t=30m → Yield: 63.7%
-3. T=45°C, C=3M, Cat=MnO2, t=30m → Yield: 64%
-4. T=45°C, C=3M, Cat=MnO2, t=25m → Yield: 64.2%
+1. T=40°C, C=3M, Cat=None, t=20m → Yield: 49.5%
+2. T=40°C, C=3M, Cat=MnO2, t=20m → Yield: 62.5%
+3. T=45°C, C=3M, Cat=MnO2, t=20m → Yield: 64.2%
+4. T=50°C, C=3M, Cat=MnO2, t=20m → Yield: 66.5%
 
 ### Optimal Result
-Iter #4, Yield: 64.2%, Time: 25m
+Iter #4, Yield: 66.5%, Time: 20m
 
 ### Deltas (Optimal vs First)
-Yield Delta: +15.5 pp
-Time Delta: -5 min
+Yield Delta: +17.0 pp
+Time Delta: 0 min
 
 ---
 
@@ -96,16 +96,16 @@ Time Delta: -5 min
 **Status:** ✅ PASS
 
 ### History
-1. T=40°C, C=3M, Cat=None, t=30m → Yield: 48.7%
-2. T=40°C, C=3M, Cat=None, t=25m → Yield: 47.5%
-3. T=40°C, C=3M, Cat=None, t=20m → Yield: 47.5%
-4. T=40°C, C=3M, Cat=None, t=15m → Yield: 47.5%
+1. T=40°C, C=3M, Cat=None, t=20m → Yield: 49.5%
+2. T=40°C, C=3M, Cat=None, t=5m → Yield: 48%
+3. T=40°C, C=3M, Cat=MnO2, t=5m → Yield: 63.5%
+4. T=40°C, C=6M, Cat=MnO2, t=5m → Yield: 65.5%
 
 ### Optimal Result
-Iter #4, Yield: 47.5%, Time: 15m
+Iter #4, Yield: 65.5%, Time: 5m
 
 ### Deltas (Optimal vs First)
-Yield Delta: -1.2 pp
+Yield Delta: +16.0 pp
 Time Delta: -15 min
 
 ---
@@ -151,15 +151,15 @@ Time Delta: -30 min
 
 ### History
 1. T=800°C, C=1M, Cat=None, t=5m → Yield: 58.7%
-2. T=850°C, C=1M, Cat=None, t=5m → Yield: 58.7%
-3. T=850°C, C=2M, Cat=None, t=5m → Yield: 58.7%
-4. T=850°C, C=3M, Cat=None, t=5m → Yield: 72.1%
+2. T=800°C, C=3M, Cat=None, t=5m → Yield: 72.1%
+3. T=800°C, C=5M, Cat=None, t=5m → Yield: 85.6%
+4. T=800°C, C=7M, Cat=None, t=5m → Yield: 87%
 
 ### Optimal Result
-Iter #4, Yield: 72.1%, Time: 5m
+Iter #4, Yield: 87%, Time: 5m
 
 ### Deltas (Optimal vs First)
-Yield Delta: +13.4 pp
+Yield Delta: +28.3 pp
 Time Delta: 0 min
 
 ---
@@ -169,16 +169,16 @@ Time Delta: 0 min
 
 ### History
 1. T=800°C, C=1M, Cat=None, t=5m → Yield: 58.7%
-2. T=800°C, C=1M, Cat=None, t=4m → Yield: 57%
-3. T=800°C, C=1M, Cat=None, t=3m → Yield: 57%
-4. T=850°C, C=1M, Cat=None, t=3m → Yield: 57%
+2. T=800°C, C=1M, Cat=None, t=3m → Yield: 57.8%
+3. T=800°C, C=3M, Cat=None, t=3m → Yield: 69.9%
+4. T=800°C, C=3M, Cat=None, t=1m → Yield: 70.5%
 
 ### Optimal Result
-Iter #3, Yield: 57%, Time: 3m
+Iter #4, Yield: 70.5%, Time: 1m
 
 ### Deltas (Optimal vs First)
-Yield Delta: -1.7 pp
-Time Delta: -2 min
+Yield Delta: +11.8 pp
+Time Delta: -4 min
 
 ---
 

@@ -9,6 +9,8 @@ try {
   // Fail-fast data loading on startup
   dataRepository.loadReactions();
   dataRepository.loadExperiments();
+  dataRepository.loadElements();
+  dataRepository.loadSubstanceReactionMap();
 
   app.listen(PORT, () => {
     console.log(`Backend server running on port ${PORT}`);

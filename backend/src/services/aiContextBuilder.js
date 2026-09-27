@@ -12,6 +12,8 @@ const runsStore = require('../repositories/runsStore');
 const dataRepository = require('../repositories/dataRepository');
 const { selectBestResult } = require('./bestResultSelector');
 
+const { analyzeEfficiency } = require('./efficiencyService');
+
 /**
  * Computes the parameter(s) that changed between two condition objects.
  * Returns a string if exactly one changed, an array if multiple changed.
@@ -58,22 +60,28 @@ function buildAiContext(runId) {
   const currentIteration = historyLength > 0 ? run.history[historyLength - 1] : null;
   const previousIteration = historyLength > 1 ? run.history[historyLength - 2] : null;
   
-  let yieldDelta = null;
+  let actualYieldDelta = null;
   let changedParameter = null;
   
   if (currentIteration && previousIteration) {
     // Round to avoid float precision issues, e.g., 64.2 - 64.0 = 0.20000000000000284
-    yieldDelta = Number((currentIteration.yield - previousIteration.yield).toFixed(2));
+    actualYieldDelta = Number((currentIteration.actualYield - previousIteration.actualYield).toFixed(2));
     changedParameter = getChangedParameters(previousIteration.conditions, currentIteration.conditions);
   }
+
+  const eff = analyzeEfficiency(run.history) || {};
 
   return {
     reactionName: reaction.name,
     goal: run.goal,
     currentIteration,
     previousIteration,
-    yieldDelta,
+    actualYieldDelta,
     changedParameter,
+    predictedYield: currentIteration ? currentIteration.predictedYield : null,
+    actualYield: currentIteration ? currentIteration.actualYield : null,
+    predictionAccuracy: eff.predictionAccuracy,
+    effectivenessTrend: eff.direction,
     optimalSoFar: selectBestResult(run.history, run.goal),
     isFinalIteration: run.status === 'completed'
   };
