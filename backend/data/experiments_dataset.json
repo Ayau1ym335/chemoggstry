@@ -1,1 +1,8226 @@
-[]
+[
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 47.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 49.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 51.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 50
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 51.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 53.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 55
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 52.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 53.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 58.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 56.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 52.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 56.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 59.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 56.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 51.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 54.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 50
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 50.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 53.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 20,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 50.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 52.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 55.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 59.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 61.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 66.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 61.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 61.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 66.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 71.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 67.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 62.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 67.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 71.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 66.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 61.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 64.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 68.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 64.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 55.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 59.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 62.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 30,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 59.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 58.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 61
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 65
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 61
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 64.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 70.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 76.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 71.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 76.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 82
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 76.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 70.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 76.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 83.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 76.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 67.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 74.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 80
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 74.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 61.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 66.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 69.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 40,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 66.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 68.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 68.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 73.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 78.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 73.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 73.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 79.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 86.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 80.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 73.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 81.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 88.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 81.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 70.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 78.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 83.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 77.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 68.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 73.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 68.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 60.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 65
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 60.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 65.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 70.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 74.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 69.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 76.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 82.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 76.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 70.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 77.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 83.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 76.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 68.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 73.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 79
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 73.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 61.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 66.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 71.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 66.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 53.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 57.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 55.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 57.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 62.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 66.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 63
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 62.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 66.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 70.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 66.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 63
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 66.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 71.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 67.1
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 60.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 65.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 69.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 65.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 59.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 62.3
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 58.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 47.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 49.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 51
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 49.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 52.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 52.8
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 53.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 58.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 55.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 52.9
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 56.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 59.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.6,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 56.5
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 51.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 56.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 0.8,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 54.4
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 49.6
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 51.2
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 52.7
+  },
+  {
+    "reactionId": "r1",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 50.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 52.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 54.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 55.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 53.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 49.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 58.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 61.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 63.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 60
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 53.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 61.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 64.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 65.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 64
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 58.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 61.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 62.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 60.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 53.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 51.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 53.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 54.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 52.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 10,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 49.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 59.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 62.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 62.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 61.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 54.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 67.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 72.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 74.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 71.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 61.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 71.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 77.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 79.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 75.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 65.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 68.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 73.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 75.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 70.5
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 62
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 59.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 62.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 63.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 60.5
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 20,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 54.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 60.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 65.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 61.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 70.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 75
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 77.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 72.5
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 62.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 74.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 79.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 81.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 77.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 65.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 69.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 74.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 76.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 72.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 62.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 63.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 61.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 25,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 56.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 59.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 60
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 58.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 51.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 63.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 68.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 69.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 66.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 58.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 67.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 71.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 73.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 70.5
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 62
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 63.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 68.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 70.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 66.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 58.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 56.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 59
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 60.5
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 57.5
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 35,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 52.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 45.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 45.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 45.4
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 45.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 42.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 46.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 48.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 48.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 48.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 45.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 48.3
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 49.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 50.6
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 49.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 47.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 46.8
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 49
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 49.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 47.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 45.7
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 44.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 46.1
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 46.2
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 45,
+    "yield": 44.9
+  },
+  {
+    "reactionId": "r2",
+    "temperature": 50,
+    "concentration": 0.5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 43.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 34.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 35.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 35.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 34.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 37.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 38.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 40.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 37.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 39.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 42.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 41.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 40.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 38.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 40
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 41.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 39.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 35.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 37.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 38.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 36
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 38.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 42.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 42.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 40.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 44.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 50.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 50.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 47
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 48.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 56.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 56.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 51.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 47
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 53.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 53.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 50.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 42.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 46.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 46.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 44.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 43.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 47.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 48.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 44.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 61.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 54.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 59.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 68.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 71.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 62.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 55.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 64
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 66
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 58.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 47
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 54.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 53.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 49.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 43.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 49.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 49
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 46.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 52.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 61
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 61.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 56.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 60.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 71.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 72.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 56.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 66.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 66.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 61.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 48.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 54.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 55.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 51.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 41.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 45.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 46.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 42.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 48.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 55.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 56.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 50.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 55.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 62.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 65.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 57.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 51.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 59.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 61.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 54.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 44.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 50.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 50.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 46.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 38.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 42.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 42
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 40.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 44.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 50.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 50.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 46.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 49.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 57
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 57
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 52
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 46.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 53.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 54
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 49.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 5,
+    "yield": 42.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 20,
+    "yield": 45.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 35,
+    "yield": 45.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "None",
+    "time": 50,
+    "yield": 44.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 49.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 50.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 50.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 49.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 52.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 53.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 55.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 52.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 54.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 57.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 56.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 53.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 55
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 56.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 54.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 50.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 52.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 53.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 51
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 53.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 57.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 55.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 59.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 65.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 65.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 62
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 63.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 71.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 71.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 66.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 62
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 68.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 68.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 65.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 61.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 61.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 59.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 58.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 62.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 63.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 59.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 66.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 74.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 76.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 69.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 74.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 83.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 86.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 77.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 70.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 79
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 81
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 73.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 62
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 69.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 68.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 64.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 58.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 64.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 64
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 61.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 67.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 76
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 76.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 71.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 75.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 86.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 87.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 79.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 71.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 81.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 81.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 76.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 63.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 69.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 70.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 66.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 56.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 60.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 61.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 57.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 63.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 71.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 65.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 77.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 80.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 72.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 66.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 74.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 76.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 69.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 59.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 65.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 65.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 61.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 53.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 57.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 57
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 55.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 59.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 65.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 65.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 61.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 72
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 72
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 67
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 61.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 68.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 69
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 64.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 5,
+    "yield": 57.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 20,
+    "yield": 60.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 35,
+    "yield": 60.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "MnO2",
+    "time": 50,
+    "yield": 59.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 43.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 44.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 44.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 43.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 46.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 47.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 49.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 46.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 48.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 51.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 50.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 49.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 47.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 49
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 50.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 48.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 44.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 46.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 47.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 20,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 45
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 47.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 51.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 51.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 49.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 53.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 59.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 59.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 56
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 57.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 65.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 65.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 60.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 56
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 62.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 62.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 59.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 51.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 55.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 30,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 53.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 52.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 56.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 53.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 60.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 68.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 63.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 68.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 77.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 80.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 71.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 73
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 75
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 67.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 56
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 63.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 62.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 40,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 58.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 52.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 58.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 58
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 61.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 70
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 70.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 65.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 69.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 80.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 81.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 73.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 65.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 75.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 75.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 70.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 57.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 63.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 64.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 45,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 60.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 50.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 54.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 55.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 57.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 65.6
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 59.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 71.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 74.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 66.5
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 60.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 68.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 63.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 53.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 59.3
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 55,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 55.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 47.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 51.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 51
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 49.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 53.7
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 59.2
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 9,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 55.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 58.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 66
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 66
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 18,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 61
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 55.8
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 62.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 63
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 24,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 58.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 5,
+    "yield": 51.1
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 20,
+    "yield": 54.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 35,
+    "yield": 54.9
+  },
+  {
+    "reactionId": "r3",
+    "temperature": 60,
+    "concentration": 30,
+    "catalyst": "KI",
+    "time": 50,
+    "yield": 53.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 26
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 29.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 31.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 29.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 27.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 29.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 32.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 33.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 32.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 29.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 30
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 34.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 35.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 34.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 29.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 29.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 33.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 35.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 32.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 28.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 26.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 30.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 31.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 29.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 26.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 31.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 36.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 38.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 35.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 30.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 34.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 41.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 46.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 42.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 34.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 36
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 44.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 48.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 45.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 37.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 35.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 42.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 45.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 41.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 35.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 31.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 36.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 37.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 35.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 30.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 35.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 41.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 45.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 41.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 35
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 41.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 51.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 56.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 51.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 40.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 42.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 61.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 56.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 42.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 40.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 51.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 57
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 51.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 41.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 34.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 42.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 45.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 42.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 35.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 36.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 44.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 49.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 45.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 36.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 43
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 60.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 55.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 43.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 46.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 60.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 65.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 45.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 44.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 61
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 54.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 43.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 36.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 45.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 49
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 45.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 36.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 35.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 42.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 46.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 42.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 34.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 40.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 52.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 56.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 51.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 40.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 42.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 55
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 60.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 56.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 43.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 41.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 50.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 55.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 51.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 41.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 30,
+    "yield": 35.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 60,
+    "yield": 42.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 90,
+    "yield": 45.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 120,
+    "yield": 41.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "None",
+    "time": 150,
+    "yield": 34.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 48
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 51.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 53.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 51.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 49.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 54.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 55.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 54.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 51.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 52
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 56.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 57.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 56.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 51.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 55.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 57.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 54.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 50.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 48.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 52.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 53.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 51.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 50,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 48.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 53.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 58.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 60.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 57.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 52.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 56.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 63.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 68.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 64.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 56.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 58
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 66.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 70.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 67.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 59.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 57.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 67.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 63.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 57.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 53.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 58.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 59.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 57.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 60,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 52.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 57.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 63.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 67.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 63.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 57
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 63.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 73.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 78.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 73.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 62.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 64.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 77.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 83.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 78.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 64.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 62.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 73.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 79
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 73.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 63.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 56.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 64.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 67.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 64.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 70,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 57.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 58.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 66.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 71.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 67.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 58.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 65
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 77.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 82.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 77.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 65.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 68.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 82.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 87.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 81.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 67.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 66.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 77.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 83
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 76.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 65.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 58.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 67.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 71
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 67.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 80,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 58.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 57.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 64.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 68.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 1,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 56.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 62.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 74.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 78.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 73.8
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 2,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 62.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 64.9
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 77
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 82.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 78.2
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 3,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 65.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 63.5
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 72.7
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 77.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 73.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 4,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 63.1
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 30,
+    "yield": 57.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 60,
+    "yield": 64.4
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 90,
+    "yield": 67.3
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 120,
+    "yield": 63.6
+  },
+  {
+    "reactionId": "r4",
+    "temperature": 90,
+    "concentration": 5,
+    "catalyst": "H2SO4",
+    "time": 150,
+    "yield": 56.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 45.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 47.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 46.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 47.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 46.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 51
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 54.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 56
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 54.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 53.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 57.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 60.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 61.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 61.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 59.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 54.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 57.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 59.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 57.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 56.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 49.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 50
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 50.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 600,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 48.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 51.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 53.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 54.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 54.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 52.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 61.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 65.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 67.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 65.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 64.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 70.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 74.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 77.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 76.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 72.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 66.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 70.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 72.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 71.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 68.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 56.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 59.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 61
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 60
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 700,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 58.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 53.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 57
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 58.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 56.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 66.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 69.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 72.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 72.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 67.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 75.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 82
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 85.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 83.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 79.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 71.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 75.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 78.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 78.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 73.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 60.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 63.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 65.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 65
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 800,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 62.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 51.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 53.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 54.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 54.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 52.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 61
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 65.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 68
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 66.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 63.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 70.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 74.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 77.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 76.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 72.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 65.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 70.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 73.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 71.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 68.4
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 56.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 58.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 60.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 60.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 900,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 57.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 44.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 45.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 47.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 46.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 1,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 45.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 52.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 53.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 54.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 55
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 3,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 52.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 57.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 60.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 62.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 60.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 6,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 58.2
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 54.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 56.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 58.7
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 58.5
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 8,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 55.8
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 1,
+    "yield": 48.1
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 3,
+    "yield": 50.3
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 6,
+    "yield": 51.9
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 8,
+    "yield": 50.6
+  },
+  {
+    "reactionId": "r5",
+    "temperature": 1000,
+    "concentration": 10,
+    "catalyst": "None",
+    "time": 10,
+    "yield": 50.1
+  }
+]
