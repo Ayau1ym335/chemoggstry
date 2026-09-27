@@ -1,0 +1,66 @@
+.message-row {
+  display: flex;
+  margin-bottom: 1.25rem;
+  width: 100%;
+}
+
+.user-row {
+  justify-content: flex-end;
+}
+
+.ai-row {
+  justify-content: flex-start;
+}
+
+.message-bubble {
+  max-width: 75%;
+  padding: 0.85rem 1.25rem;
+  border-radius: 16px;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  position: relative;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  animation: popIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.95) translateY(10px); }
+  to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.user-bubble {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border-bottom-right-radius: 4px;
+}
+
+.ai-bubble {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--text-main);
+  border-bottom-left-radius: 4px;
+}
+
+.message-sender {
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.user-bubble .message-sender {
+  text-align: right;
+  color: rgba(255,255,255,0.8);
+}
+
+.ai-bubble .message-sender {
+  color: #a5b4fc;
+}
+
+.message-text {
+  word-break: break-word;
+}

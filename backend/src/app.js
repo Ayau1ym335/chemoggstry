@@ -1,8 +1,9 @@
 const express = require('express');
 const cors = require('cors');
-const healthRoutes = require('./routes/health');
+const healthRoutes    = require('./routes/health');
 const reactionsRoutes = require('./routes/reactions');
-const runsRoutes = require('./routes/runs');
+const runsRoutes      = require('./routes/runs');
+const assistantRoutes = require('./routes/assistant');
 
 const app = express();
 
@@ -14,6 +15,7 @@ app.use(express.json());
 app.use('/health', healthRoutes);
 app.use('/reactions', reactionsRoutes);
 app.use('/runs', runsRoutes);
+app.use('/assistant', assistantRoutes);
 
 // 404 Handler (unmatched routes)
 app.use((req, res, next) => {

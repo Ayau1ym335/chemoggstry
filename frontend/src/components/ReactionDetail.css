@@ -1,0 +1,89 @@
+.reaction-detail-panel {
+  margin-top: 2rem;
+  padding: 2rem;
+  border-radius: 16px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--primary-glow);
+  box-shadow: var(--shadow-glow);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.slide-up {
+  animation: slideUpFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUpFade {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.detail-content h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  color: #a5b4fc;
+}
+
+.detail-row {
+  display: flex;
+  align-items: baseline;
+  gap: 1rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.1rem;
+}
+
+.detail-label {
+  color: var(--text-muted);
+  min-width: 250px;
+}
+
+.detail-value {
+  color: var(--text-main);
+  font-weight: 500;
+}
+
+.equation-box {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-family: ui-monospace, monospace;
+  letter-spacing: 0.05em;
+  color: #e2e8f0;
+}
+
+.success-text {
+  color: #34d399; /* Emerald 400 */
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.primary-action-btn {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 9999px;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(236, 72, 153, 0.4);
+  text-transform: uppercase;
+}
+
+.primary-action-btn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(236, 72, 153, 0.6);
+}
+
+.primary-action-btn:active {
+  transform: translateY(1px);
+}

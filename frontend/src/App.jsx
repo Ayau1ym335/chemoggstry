@@ -6,21 +6,45 @@ import './styles/index.css';
 function App() {
   return (
     <div className="app-container">
-      <header className="app-header">
-        <h1>Chemoggstry</h1>
-        <nav className="tabs">
-          <NavLink to="/reactions" className={({ isActive }) => (isActive ? 'tab active' : 'tab')}>
-            🧪 База Реакций
+      {/* ── Sidebar ──────────────────────────────────────── */}
+      <aside className="sidebar">
+        <div className="sidebar-logo">
+          chem<span>MOGGstry</span>
+        </div>
+
+        <nav className="sidebar-nav">
+          <NavLink
+            to="/reactions"
+            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
+          >
+            <span className="nav-icon">🧪</span>
+            Reaction Database
           </NavLink>
-          <NavLink to="/optimizer" className={({ isActive }) => (isActive ? 'tab active' : 'tab')}>
-            🤖 Оптимизатор
+
+          <NavLink
+            to="/optimizer"
+            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
+          >
+            <span className="nav-icon">⚙️</span>
+            Optimizer
           </NavLink>
-          <NavLink to="/assistant" className={({ isActive }) => (isActive ? 'tab active' : 'tab')}>
-            💬 AI-Ассистент
+
+          <NavLink
+            to="/assistant"
+            className={({ isActive }) => `nav-item${isActive ? ' active' : ''}`}
+          >
+            <span className="nav-icon">💬</span>
+            AI Assistant
           </NavLink>
         </nav>
-      </header>
 
+        <div className="sidebar-footer">
+          <div className="sidebar-footer-avatar">U</div>
+          User
+        </div>
+      </aside>
+
+      {/* ── Main ─────────────────────────────────────────── */}
       <main className="main-content">
         <AppRoutes />
       </main>
