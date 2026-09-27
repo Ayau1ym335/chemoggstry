@@ -1,4 +1,4 @@
-const BASE = '/api';
+import { apiGet, apiPost } from './apiClient';
 
 /**
  * Create a new optimization run.
@@ -6,14 +6,8 @@ const BASE = '/api';
  * @returns {Promise<{ id, reactionId, goal, status, history, maxIterations }>}
  */
 export async function createRun({ reactionId, goal }) {
-  const res = await fetch(`${BASE}/runs`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ reactionId, goal })
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data?.error?.message ?? `HTTP ${res.status}`);
-  return data.run; // Unwrap envelope
+  const data = await apiPost('/runs', { reactionId, goal });
+  return data.run;
 }
 
 /**
@@ -22,37 +16,35 @@ export async function createRun({ reactionId, goal }) {
  * @returns {Promise<{ temperature, concentration, catalyst, time }>}
  */
 export async function getNextConditions(runId) {
-  const res = await fetch(`${BASE}/runs/${runId}/next`, { method: 'POST' });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data?.error?.message ?? `HTTP ${res.status}`);
+  const data = await apiPost(`/runs/${runId}/next`);
   return data.suggestedConditions;
 }
 
 /**
- * Submit an experiment iteration and get the yield.
+ * Submit a predicted yield for the next iteration.
  * @param {string} runId
  * @param {{ temperature, concentration, catalyst, time }} conditions
- * @returns {Promise<{ iteration: { iterationNumber, conditions, yield, timestamp }, runStatus: string }>}
+ * @returns {Promise<{ predictedYield: number }>}
  */
-export async function runExperiment(runId, conditions) {
-  const res = await fetch(`${BASE}/runs/${runId}/experiment`, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ conditions })
-  });
-  const data = await res.json();
-  if (!res.ok) throw new Error(data?.error?.message ?? `HTTP ${res.status}`);
-  return data; // { iteration, runStatus }
+export async function predictYield(runId, conditions) {
+  return apiPost(`/runs/${runId}/predict`, { conditions });
+}
+
+/**
+ * Register the actual yield after the student runs the experiment.
+ * @param {string} runId
+ * @param {number} actualYield
+ * @returns {Promise<{ iteration, runStatus }>}
+ */
+export async function registerResult(runId, actualYield) {
+  return apiPost(`/runs/${runId}/result`, { actualYield });
 }
 
 /**
  * Get the optimal conditions found for a completed (or in-progress) run.
  * @param {string} runId
- * @returns {Promise<{ optimal: { iterationNumber, conditions, yield }, isFinal: boolean }>}
+ * @returns {Promise<{ optimal, isFinal }>}
  */
 export async function getOptimal(runId) {
-  const res = await fetch(`${BASE}/runs/${runId}/optimal`);
-  const data = await res.json();
-  if (!res.ok) throw new Error(data?.error?.message ?? `HTTP ${res.status}`);
-  return data; // { optimal, isFinal }
+  return apiGet(`/runs/${runId}/optimal`);
 }

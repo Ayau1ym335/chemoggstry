@@ -1,5 +1,7 @@
 'use strict';
 
+const { YIELD_CHANGE_THRESHOLD, PREDICTION_ACCURACY_THRESHOLD } = require('./constants');
+
 /**
  * assistantResponder.js
  *
@@ -108,12 +110,12 @@ const TEMPLATES = {
     }
 
     const direction = cur.conditions.temperature > prev.conditions.temperature ? 'raised' : 'lowered';
-    if (actualYieldDelta > 0.05) {
+    if (actualYieldDelta > YIELD_CHANGE_THRESHOLD) {
       return `In the previous step, ${direction} the temperature to ${cur.conditions.temperature}°C ` +
         `increased the yield from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}). ` +
         `This suggests the reaction benefits from higher thermal energy at this stage. ` +
         `The algorithm continues exploring in this direction.`;
-    } else if (actualYieldDelta < -0.05) {
+    } else if (actualYieldDelta < -YIELD_CHANGE_THRESHOLD) {
       return `${direction.charAt(0).toUpperCase() + direction.slice(1)} the temperature to ${cur.conditions.temperature}°C ` +
         `caused the yield to fall from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}). ` +
         `This indicates the reaction is sensitive to temperature in this range. ` +
@@ -177,7 +179,7 @@ const TEMPLATES = {
         `Future experiments will build a trajectory to determine whether the yield is improving or declining.`;
     }
 
-    if (actualYieldDelta !== null && actualYieldDelta < -0.05) {
+    if (actualYieldDelta !== null && actualYieldDelta < -YIELD_CHANGE_THRESHOLD) {
       return `The yield fell from ${prev.actualYield}% to ${cur.actualYield}% (${fmtDelta(actualYieldDelta)}) ` +
         `when ${fmtParam(changedParameter)} was changed. ` +
         `This means moving ${fmtParam(changedParameter)} in that direction pushed conditions away from the optimum. ` +
@@ -243,8 +245,8 @@ const TEMPLATES = {
         `Once the second experiment is complete, you will be able to compare results here.`;
     }
 
-    const trend = actualYieldDelta > 0.05 ? `increased by ${fmtDelta(actualYieldDelta)}`
-      : actualYieldDelta < -0.05          ? `decreased by ${fmtDelta(actualYieldDelta)}`
+    const trend = actualYieldDelta > YIELD_CHANGE_THRESHOLD ? `increased by ${fmtDelta(actualYieldDelta)}`
+      : actualYieldDelta < -YIELD_CHANGE_THRESHOLD          ? `decreased by ${fmtDelta(actualYieldDelta)}`
       : `remained approximately the same`;
 
     return `Experiment #${prev.iterationNumber} tested ${fmtConditions(prev.conditions)} ` +
@@ -289,7 +291,7 @@ const TEMPLATES = {
     const absAccuracy     = Math.abs(accuracyRounded);
 
     // Threshold: ±3 pp is considered "accurate"
-    if (absAccuracy <= 3) {
+    if (absAccuracy <= PREDICTION_ACCURACY_THRESHOLD) {
       return `Предсказание оказалось точным — прогнозировался результат ${predictedYield}%, вы получили ${actualYield}%.`;
     }
 

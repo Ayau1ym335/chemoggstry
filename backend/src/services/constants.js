@@ -23,4 +23,17 @@ const YIELD_TOLERANCE = 5;
  */
 const MAX_ITERATIONS = 4;
 
-module.exports = { YIELD_TOLERANCE, MAX_ITERATIONS };
+/**
+ * Minimum absolute yield change (pp) to be considered a meaningful shift.
+ * Below this threshold "yield changed" comparisons are treated as flat.
+ * Used in assistantResponder for why_temperature_changed, why_yield_decreased, etc.
+ */
+const YIELD_CHANGE_THRESHOLD = 0.05;
+
+/**
+ * Prediction accuracy within ±N pp is considered "accurate" for the
+ * why_actual_differs_from_predicted template (rounded integer comparison).
+ */
+const PREDICTION_ACCURACY_THRESHOLD = 3;
+
+module.exports = { YIELD_TOLERANCE, MAX_ITERATIONS, YIELD_CHANGE_THRESHOLD, PREDICTION_ACCURACY_THRESHOLD };

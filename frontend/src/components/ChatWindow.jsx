@@ -2,10 +2,12 @@ import React, { useState, useRef, useEffect } from 'react';
 import MessageBubble from './MessageBubble';
 import './ChatWindow.css';
 
-export default function ChatWindow({ onSend, initialMessages = [] }) {
+const DEFAULT_GREETING = 'Hello! I am your ChemAI assistant. Ask me why the algorithm chose certain conditions or what happens if we change a parameter.';
+
+export default function ChatWindow({ onSend, initialMessages = [], greeting = DEFAULT_GREETING }) {
   const [messages, setMessages] = useState(
     initialMessages.length ? initialMessages : [
-      { role: 'ai', text: 'Hello! I am your ChemAI assistant. Ask me why the algorithm chose certain conditions or what happens if we change a parameter.' }
+      { role: 'ai', text: greeting }
     ]
   );
   const [inputValue, setInputValue] = useState('');
