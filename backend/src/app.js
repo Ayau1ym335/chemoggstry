@@ -10,7 +10,18 @@ const checkReactionRoutes = require('./routes/checkReaction');
 const app = express();
 
 // Global Middlewares
-app.use(cors());
+const allowedOrigins = [
+  'http://localhost:5173',
+  'http://localhost:3000',
+  'https://frontend-fawn-three-45.vercel.app',
+  /\.vercel\.app$/,
+  ...(process.env.CLIENT_URL ? [process.env.CLIENT_URL] : [])
+];
+
+app.use(cors({
+  origin: allowedOrigins,
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
